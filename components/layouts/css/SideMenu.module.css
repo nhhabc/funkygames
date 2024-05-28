@@ -1,0 +1,26 @@
+.search_input {
+  width: calc(100% - 40px);
+  margin: 0 20px;
+  padding: 5px 10px 5px 20px;
+  border-width: 0px 0px 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(225, 225, 225);
+  font-weight: bold;
+  font-size: 13px;
+  outline: none;
+  background-color: transparent;
+  color: rgb(51, 51, 51);
+}
+
+.menu_list {
+  padding-bottom: 32px;
+  height: calc(100vh - 100px);
+  overflow: auto;
+}
+
+.menu_list li {
+  list-style: inside none none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0;
+}

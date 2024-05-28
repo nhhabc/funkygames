@@ -1,0 +1,38 @@
+.content_container {
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  width: calc(100% - 260px);
+  contain: layout;
+}
+
+.section {
+  padding: 40px 0px;
+}
+
+.inside_section {
+  width: calc(60%);
+  padding: 0 40px;
+}
+
+.download_button {
+  border: 1px solid rgb(50, 50, 159);
+  color: rgb(50, 50, 159);
+  font-weight: normal;
+  margin-left: 0.5em;
+  padding: 4px 8px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.default_table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: keep-all;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 1.5em;
+  margin-right: 1.5em;
+}
