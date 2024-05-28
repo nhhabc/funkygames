@@ -4,7 +4,7 @@ import { Box, Flex, Image, ListItem, Text, UnorderedList } from '@chakra-ui/reac
 import styles from '../css/ContentDisplay.module.css'
 import React from 'react'
 import ViewDetect from '@/components/utils/ViewDetect'
-import { currency } from '@/constants/dummy-data/dummy-data'
+import { currency, errorCode, language } from '@/constants/dummy-data/dummy-data'
 
 const Preview = () => {
   
@@ -180,76 +180,18 @@ const Preview = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>0</td>
-                  <td>Success</td>
-                </tr>
-                <tr>
-                  <td>400</td>
-                  <td>Invalid Input</td>
-                </tr>
-                <tr>
-                  <td>401</td>
-                  <td>Player Not Login</td>
-                </tr>
-                <tr>
-                  <td>402</td>
-                  <td>Insufficient Balance</td>
-                </tr>
-                <tr>
-                  <td>403</td>
-                  <td>Bet already exists</td>
-                </tr>
-                <tr>
-                  <td>404</td>
-                  <td>Bet Was Not Found</td>
-                </tr>
-                <tr>
-                  <td>405</td>
-                  <td>Api Suspended</td>
-                </tr>
-                <tr>
-                  <td>406</td>
-                  <td>Over Max Winning</td>
-                </tr>
-                <tr>
-                  <td>407</td>
-                  <td>Over Max Lose</td>
-                </tr>
-                <tr>
-                  <td>409</td>
-                  <td>Bet Already Settled</td>
-                </tr>
-                <tr>
-                  <td>410</td>
-                  <td>Bet Already Cancelled</td>
-                </tr>
-                <tr>
-                  <td>3002</td>
-                  <td>Report Invalid Input</td>
-                </tr>
-                <tr>
-                  <td>3003</td>
-                  <td>Report Page Not Found</td>
-                </tr>
-                <tr>
-                  <td>3004</td>
-                  <td>Report GameCode Not Found</td>
-                </tr>
-                <tr>
-                  <td>9999</td>
-                  <td>Internal Server Error</td>
-                </tr>
-                <tr>
-                  <td>503</td>
-                  <td>Under Maintenance</td>
-                </tr>
+                {errorCode.map((item, i) => (
+                  <tr key={i}>
+                    <td>{item.code}</td>
+                    <td>{item.message}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
         </div>
       </ViewDetect>
-      <ViewDetect id='supported_currency'>
+      <ViewDetect threshold={0.1} id='supported_currency'>
         <div className={styles.section}>
           <Flex>
             <div className={styles.inside_section}>
@@ -269,6 +211,185 @@ const Preview = () => {
                     <td>{item}</td>
                   </tr>
                 ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </ViewDetect>
+      <ViewDetect id='statement_language'>
+        <div className={styles.section}>
+          <Flex>
+            <div className={styles.inside_section}>
+              <HeadingText my={"0.5em"}>Supported Language List</HeadingText>
+            </div>
+          </Flex>
+          <div className={styles.inside_section}>
+            <table>
+              <thead>
+                <tr>
+                  <th>Language</th>
+                  <th>Language Code</th>
+                  <th>ISO Language</th>
+                </tr>
+              </thead>
+              <tbody>
+                {language.map((item, i) => (
+                  <tr key={i}>
+                    <td>{item.name}</td>
+                    <td>{item.code}</td>
+                    <td>{item.iso}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <Text mt={"1em"}>If the operator delivers “ZH_TW”, we will return “ZH_CN</Text>
+          </div>
+        </div>
+      </ViewDetect>
+      <ViewDetect id='front_end_integration'>
+        <div className={styles.section}>
+          <Flex>
+            <div className={styles.inside_section}>
+              <HeadingText my={"0.5em"}>Front-End Integration</HeadingText>
+            </div>
+          </Flex>
+          <div className={styles.inside_section}>
+            <Text my={'1em'}>
+              Front-end integration is a two-way communication between operator and the game embedded inside the iframe.
+              <br/>
+              The implementation uses cross-origin communication between "window" objects via the "window.postMessage" function and the "message"
+              <br/>
+              event.
+              <br/>
+              As the game is embedded in the iframe, it sends a message to the parent window.
+            </Text>
+            <Box my={"1.5em"}>
+              <h4>Operator sending message example:</h4>
+            </Box>
+            <Box my={"1.5em"}>
+              <code>window.parent.postMessage(message, "*");</code>
+            </Box>
+            <Box my={"1.5em"}>
+              <h4>To receive messages, subscribe to the "message" event:</h4>
+            </Box>
+            <Box my={"1.5em"}>
+              <pre>
+                {`window.addEventListener("message", function(event){\n  console.log(event.data); //event.data is message sent from iFrame window.\n});`}
+              </pre>
+            </Box>
+            <Box my={"1.5em"}>
+              <h4>Message data is a JavaScript object in the following format:</h4>
+            </Box>
+            <Box my={"1.5em"}>
+              <pre>
+              {`{\n  "name": "messageName",\n  "sender":"game",\n}`}
+              </pre>
+            </Box>
+            <Box my={"1.5em"}>
+              <h2>The following messages need to be implemented.</h2>
+            </Box>
+            <Box my={"1.5em"}>
+              <h1>Stop Auto Play</h1>
+            </Box>
+            <Text my={"1em"}>
+              This message is sent from operator to the game to stop auto play.
+              <br/>
+              This kind of message is usually sent by operator when a modal window is about to appear, and the user is not able to interact with the game.
+            </Text>
+            <Box my={"1em"}>
+              <h4>This format indicates that the message is intended to stop autoplay, with the specific name "stopAutoplay" and the sender being any word.</h4>
+            </Box>
+            <Box my={"1.5em"}>
+              <pre>
+                {`{\n  "name": "stopAutoplay",\n  "sender": "anyOperator"\n}`}
+              </pre>
+            </Box>
+          </div>
+        </div>
+      </ViewDetect>
+      <ViewDetect id='api_integration'>
+        <div className={styles.section}>
+          <Flex>
+            <div className={styles.inside_section}>
+              <HeadingText my={"0.5em"}>API Integration Information</HeadingText>
+            </div>
+          </Flex>
+          <div className={styles.inside_section}>
+            <table>
+              <thead>
+                <tr><th colSpan={3}>API Integration Information</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowSpan={2}>Production</td>
+                  <td>API Address</td>
+                  <td>https://cfbb7e4b9e25.funplayfky.com/</td>
+                </tr>
+                <tr>
+                  <td>Report API Address</td>
+                  <td>https://rs5kf13akf3f.funplayfky.com/</td>
+                </tr>
+                <tr>
+                  <td rowSpan={2}>UAT</td>
+                  <td>API Address</td>
+                  <td>http://trial-gp-api.funkytest.com/</td>
+                </tr>
+                <tr>
+                  <td>Report API Address</td>
+                  <td>http://trial-gp-api-report.funkytest.com/</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colSpan={3}>FunkyGames Authentication & User-Agent</th></tr>
+              </thead>
+              <tbody>
+                <tr><td colSpan={3}>Please always verify the below information attached to every request header when receiving API call from Funky Games API. (For Seamless Wallet only)</td></tr>
+                <tr>
+                  <td rowSpan={2}>Production</td>
+                  <td>Authentication</td>
+                  <td>23d828a8-0bba-49e8-90a6-9007bb50de1f/</td>
+                </tr>
+                <tr>
+                  <td>User-Agent</td>
+                  <td>funky</td>
+                </tr>
+                <tr>
+                  <td rowSpan={2}>UAT</td>
+                  <td>Authentication</td>
+                  <td>23d828a8-0bba-49e8-90a6-9007bb50de1f</td>
+                </tr>
+                <tr>
+                  <td>User-Agent</td>
+                  <td>funky</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colSpan={3}>FunkyGames API IPs to be whitelisted</th></tr>
+              </thead>
+              <tbody>
+                <tr><td colSpan={3}>Please always verify the below information attached to every request header when receiving API call from Funky Games API. (For Seamless Wallet only)</td></tr>
+                <tr>
+                  <td>Production</td>
+                  <td colSpan={2}>
+                    104.155.236.91
+                    <br/>
+                    35.194.208.47
+                    <br/>
+                    35.194.212.54
+                    <br/>
+                    34.80.38.181
+                    <br/>
+                    34.170.107.143
+                  </td>
+                </tr>
+                <tr>
+                  <td>UAT</td>
+                  <td colSpan={2}>
+                    35.194.208.47
+                    <br/>
+                    34.80.38.181
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
