@@ -27,7 +27,7 @@ const ApiContainer = ({data}: TApiContainerProps) => {
         </div>
       </ViewDetect>
       {data.api.map((api, i) => (
-        <ViewDetect threshold={0.3} id={api.id} key={i}>
+        <ViewDetect threshold={0.4} id={api.id} key={i}>
           <div className={styles.section}>
             <Flex>
               <div className={styles.inside_section}>
