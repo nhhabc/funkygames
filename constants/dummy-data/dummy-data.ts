@@ -486,11 +486,13 @@ export const apiData = [
                       {
                         name: "gameUrl",
                         type: "string",
+                        required: false,
                         description: "The destination for operator to redirect player to the game.",
                       },
                       {
                         name: "token",
                         type: "string",
+                        required: false,
                         description: "The token for player to enter the game.",
                       },
                     ]
@@ -697,6 +699,7 @@ export const apiData = [
                       {
                         name: "balance",
                         type: "number <double>",
+                        required: false,
                         description: "Player’s balance.",
                       },
                     ]
@@ -868,6 +871,563 @@ export const apiData = [
               "winAmount": 0,
               "status": "string",
               "statementDate": "string"
+            }
+          },
+        ]
+      },
+      {
+        title: "Place Bet",
+        id: "place_bet",
+        type: ApiEnum.POST,
+        endpoint: "/{funkyUrl}/Funky/Bet/PlaceBet",
+        description: "When a player makes a bet in a game, Funky system will send this request to operator system.",
+        parameter: [
+          {
+            name: "PATH PARAMETERS",
+            description: "",
+            params: [
+              {
+                name: "funkyUrl",
+                type: "string",
+                required: true,
+                description: "Funky System's URL.",
+                restriction: [],
+              }
+            ]
+          },
+          {
+            name: "HEADER PARAMETERS",
+            description: "",
+            params: [
+              {
+                name: "User-Agent",
+                type: "string",
+                required: true,
+                description: "Operator’s identifiable name.",
+                restriction: [],
+              },
+              {
+                name: "Authentication",
+                type: "string",
+                required: true,
+                description: "Authentication token.",
+                restriction: [],
+              },
+              {
+                name: "X-Request-ID",
+                type: "string",
+                required: true,
+                description: "Identifier for log tracing. Please use a mixed alphanumeric string in the form of a UUID, with a length of up to 64 characters.",
+                restriction: [],
+              },
+            ]
+          },
+          {
+            name: "REQUEST BODY SCHEMA",
+            description: "application/json",
+            params: [
+              {
+                name: "bet",
+                type: "object",
+                required: true,
+                description: "",
+                restriction: [],
+                schema: [
+                  {
+                    name: "gameCode",
+                    type: "string",
+                    required: true,
+                    description: "The game (by code) to be launched.",
+                  },
+                  {
+                    name: "refNo",
+                    type: "string",
+                    required: true,
+                    description: "The reference number of the bet which is always unique.",
+                  },
+                  {
+                    name: "roundId",
+                    type: "string",
+                    required: true,
+                    description: "RoundId",
+                  },
+                  {
+                    name: "stake",
+                    type: "number <double>",
+                    required: true,
+                    description: "Bet amount",
+                  },
+                  {
+                    name: "voucherId",
+                    type: "string",
+                    required: false,
+                    description: "If player is using voucher, fill in the unique id of voucher.",
+                  },
+                ]
+              },
+              {
+                name: "fpid",
+                type: "integer <int32>",
+                required: true,
+                description: "Platform ID.",
+                restriction: [],
+              },
+              {
+                name: "playerId",
+                type: "string",
+                required: true,
+                description: "The unique ID of the player. At least 3 characters are required.",
+                restriction: [],
+              },
+              {
+                name: "playerIp",
+                type: "string",
+                required: true,
+                description: "Player’s IP at the moment. This is for preventing players from betting through VPN. (Please enter the correct country’s IP for real players due to regional restrictions, API testing is not subject to this requirement)",
+                restriction: [],
+              },
+              {
+                name: "sessionId",
+                type: "string",
+                required: true,
+                description: "User session from platform, the unique ID when the player launch game.",
+                restriction: [],
+              },
+            ]
+          },
+        ],
+        responses: [
+          {
+            code: 200,
+            message: "OK",
+            parameter: [
+              {
+                name: "RESPONSE SCHEMA",
+                description: "application/json",
+                params: [
+                  {
+                    name: "errorCode",
+                    type: "integer",
+                    required: false,
+                    description: "0,400,401,402,403,405,407,602",
+                    restriction: [],
+                  },
+                  {
+                    name: "errorMessage",
+                    type: "string",
+                    required: false,
+                    description: "Error Code List.",
+                    restriction: [],
+                  },
+                  {
+                    name: "data",
+                    type: "object",
+                    required: false,
+                    description: "",
+                    restriction: [],
+                    schema: [
+                      {
+                        name: "balance",
+                        type: "number <double>",
+                        required: false,
+                        description: "Player’s balance.",
+                      },
+                    ]
+                  },
+                ]
+              }
+            ]
+          }
+        ],
+        sample: [
+          {
+            name: "Request samples",
+            payload: "payload",
+            contentType: "application/json",
+            json: {
+              "bet": {
+                "gameCode": "string",
+                "refNo": "string",
+                "roundId": "string",
+                "stake": 0,
+                "voucherId": "string"
+              },
+              "playerId": "string",
+              "sessionId": "string",
+              "fpid": 0,
+              "playerIp": "string"
+            }
+          },
+          {
+            name: "Response samples",
+            payload: "200",
+            contentType: "application/json",
+            json: {
+              "errorCode": 0,
+              "errorMessage": "string",
+              "data": {
+                "balance": 0
+              }
+            }
+          },
+        ]
+      },
+      {
+        title: "Bet Settlement",
+        id: "bet_settlement",
+        type: ApiEnum.POST,
+        endpoint: "/{funkyUrl}/Funky/Bet/SettleBet",
+        description: "When a game is completed Funky system will send this request to the operator system to adjust the balance of the player.",
+        parameter: [
+          {
+            name: "PATH PARAMETERS",
+            description: "",
+            params: [
+              {
+                name: "funkyUrl",
+                type: "string",
+                required: true,
+                description: "Funky System's URL.",
+                restriction: [],
+              }
+            ]
+          },
+          {
+            name: "HEADER PARAMETERS",
+            description: "",
+            params: [
+              {
+                name: "User-Agent",
+                type: "string",
+                required: true,
+                description: "Operator’s identifiable name.",
+                restriction: [],
+              },
+              {
+                name: "Authentication",
+                type: "string",
+                required: true,
+                description: "Authentication token.",
+                restriction: [],
+              },
+              {
+                name: "X-Request-ID",
+                type: "string",
+                required: true,
+                description: "Identifier for log tracing. Please use a mixed alphanumeric string in the form of a UUID, with a length of up to 64 characters.",
+                restriction: [],
+              },
+            ]
+          },
+          {
+            name: "REQUEST BODY SCHEMA",
+            description: "application/json",
+            params: [
+              {
+                name: "betResultReq",
+                type: "object",
+                required: true,
+                description: "",
+                restriction: [],
+                schema: [
+                  {
+                    name: "effectiveStake",
+                    type: "number <double>",
+                    required: true,
+                    description: "Effective stake. For some games, game result might be TIE and the stake won’t equal to effective stake. In fishing games, player might play more than the initial stake.",
+                  },
+                  {
+                    name: "gameCode",
+                    type: "string",
+                    required: true,
+                    description: "The game (by code) to be launched.",
+                  },
+                  {
+                    name: "playerId",
+                    type: "string",
+                    required: true,
+                    description: "The unique ID of the player. At least 3 characters are required.",
+                  },
+                  {
+                    name: "stake",
+                    type: "number <double>",
+                    required: true,
+                    description: "Bet amount",
+                  },
+                  {
+                    name: "winAmount",
+                    type: "number <double>",
+                    required: true,
+                    description: "The amount that player wins.",
+                  },
+                  {
+                    name: "freeSpinMainBet",
+                    type: "string",
+                    required: false,
+                    description: "When bet is free spin, fill in the refNo of root bet.",
+                  },
+                ]
+              },
+              {
+                name: "fpid",
+                type: "integer <int32>",
+                required: true,
+                description: "Platform ID.",
+                restriction: [],
+              },
+              {
+                name: "refNo",
+                type: "string",
+                required: true,
+                description: "The reference number of the bet which is always unique.",
+                restriction: [],
+              },
+              {
+                name: "voucherId",
+                type: "string",
+                required: false,
+                description: "The reference number of the bet which is always unique.",
+                restriction: [],
+              },
+            ]
+          },
+        ],
+        responses: [
+          {
+            code: 200,
+            message: "OK",
+            parameter: [
+              {
+                name: "RESPONSE SCHEMA",
+                description: "application/json",
+                params: [
+                  {
+                    name: "errorCode",
+                    type: "integer",
+                    required: false,
+                    description: "0,404,409,403",
+                    restriction: [],
+                  },
+                  {
+                    name: "errorMessage",
+                    type: "string",
+                    required: false,
+                    description: "Error Code List.",
+                    restriction: [],
+                  },
+                  {
+                    name: "data",
+                    type: "object",
+                    required: false,
+                    description: "",
+                    restriction: [],
+                    schema: [
+                      {
+                        name: "balance",
+                        type: "number <double>",
+                        required: false,
+                        description: "Player’s balance.",
+                      },
+                      {
+                        name: "playerId",
+                        type: "string",
+                        required: false,
+                        description: "The unique ID of the player. At least 3 characters are required.",
+                      },
+                      {
+                        name: "currency",
+                        type: "string",
+                        required: false,
+                        description: "User currency (if you want to use kcurrency please contact to FunkySupport).",
+                      },
+                      {
+                        name: "statementDate",
+                        type: "number <double>",
+                        required: false,
+                        description: "Format: yyyy-MM-dd. Statement date for settlement which includes date part only.",
+                      },
+                    ]
+                  },
+                ]
+              }
+            ]
+          }
+        ],
+        sample: [
+          {
+            name: "Request samples",
+            payload: "payload",
+            contentType: "application/json",
+            json: {
+              "refNo": "string",
+              "betResultReq": {
+                "winAmount": 0,
+                "stake": 0,
+                "effectiveStake": 0,
+                "playerId": "string",
+                "gameCode": "string",
+                "freeSpinMainBet": "string"
+              },
+              "fpid": 0,
+              "voucherId": "string"
+            }
+          },
+          {
+            name: "Response samples",
+            payload: "200",
+            contentType: "application/json",
+            json: {
+              "errorCode": 0,
+              "errorMessage": "string",
+              "data": {
+                "balance": 0,
+                "playerId": "string",
+                "currency": "string",
+                "statementDate": "string"
+              }
+            }
+          },
+        ]
+      },
+      {
+        title: "Bet Cancellation",
+        id: "bet_cancellation",
+        type: ApiEnum.POST,
+        endpoint: "/{funkyUrl}/Funky/Bet/CancelBet",
+        description: "If a Bet request timeout or operator system responded an error to the game provider, a CancelBet request will be sent to the operator system. Funky system will treat it as a failed bet and report to the player that his bet has been failed. Operator must handle this request once and only once and must respond to our platform. Successfully settled bets cannot be canceled through the cancel bet API.",
+        parameter: [
+          {
+            name: "PATH PARAMETERS",
+            description: "",
+            params: [
+              {
+                name: "funkyUrl",
+                type: "string",
+                required: true,
+                description: "Funky System's URL.",
+                restriction: [],
+              }
+            ]
+          },
+          {
+            name: "HEADER PARAMETERS",
+            description: "",
+            params: [
+              {
+                name: "User-Agent",
+                type: "string",
+                required: true,
+                description: "Operator’s identifiable name.",
+                restriction: [],
+              },
+              {
+                name: "Authentication",
+                type: "string",
+                required: true,
+                description: "Authentication token.",
+                restriction: [],
+              },
+              {
+                name: "X-Request-ID",
+                type: "string",
+                required: true,
+                description: "Identifier for log tracing. Please use a mixed alphanumeric string in the form of a UUID, with a length of up to 64 characters.",
+                restriction: [],
+              },
+            ]
+          },
+          {
+            name: "REQUEST BODY SCHEMA",
+            description: "application/json",
+            params: [
+              {
+                name: "fpid",
+                type: "integer <int32>",
+                required: true,
+                description: "Platform ID.",
+                restriction: [],
+              },
+              {
+                name: "playerId",
+                type: "string",
+                required: true,
+                description: "The unique ID of the player. At least 3 characters are required.",
+                restriction: [],
+              },
+              {
+                name: "refNo",
+                type: "string",
+                required: true,
+                description: "The reference number of the bet which is always unique.",
+                restriction: [],
+              },
+            ]
+          },
+        ],
+        responses: [
+          {
+            code: 200,
+            message: "OK",
+            parameter: [
+              {
+                name: "RESPONSE SCHEMA",
+                description: "application/json",
+                params: [
+                  {
+                    name: "errorCode",
+                    type: "integer",
+                    required: false,
+                    description: "0,404,409,403",
+                    restriction: [],
+                  },
+                  {
+                    name: "errorMessage",
+                    type: "string",
+                    required: false,
+                    description: "Error Code List.",
+                    restriction: [],
+                  },
+                  {
+                    name: "data",
+                    type: "object",
+                    required: false,
+                    description: "",
+                    restriction: [],
+                    schema: [
+                      {
+                        name: "refNo",
+                        type: "string",
+                        required: false,
+                        description: "The reference number of the bet which is always unique.",
+                      },
+                    ]
+                  },
+                ]
+              }
+            ]
+          }
+        ],
+        sample: [
+          {
+            name: "Request samples",
+            payload: "payload",
+            contentType: "application/json",
+            json: {
+              "playerId": "string",
+              "refNo": "string",
+              "fpid": 0
+            }
+          },
+          {
+            name: "Response samples",
+            payload: "200",
+            contentType: "application/json",
+            json: {
+              "errorMessage": "string",
+              "errorCode": 0,
+              "data": {
+                "refNo": "string"
+              }
             }
           },
         ]

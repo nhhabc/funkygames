@@ -18,7 +18,6 @@ const SideMenu = () => {
     if (violation) {
       window.scrollTo({
         top: violation?.offsetTop - 100,
-        behavior:"smooth"
       });
     }
   }

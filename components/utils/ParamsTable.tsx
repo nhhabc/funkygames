@@ -45,6 +45,7 @@ const ParamsTable = ({data}: TParamsTableProps) => {
                             <td className={styles.parameter_text}>
                               <span className={styles.noted_table_item}/>
                               <span>{s.name}</span>
+                              {s.required && <div className={styles.required}>required</div>}
                             </td>
                             <td className={styles.parameter_details}>
                             <div>
@@ -72,6 +73,7 @@ export default ParamsTable
 type TSchema = {
   name: string,
   type: string,
+  required: boolean
   description: string,
 }
 
