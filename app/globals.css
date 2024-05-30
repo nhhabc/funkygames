@@ -106,9 +106,27 @@ h2 {
   color: rgb(51, 51, 51);
 }
 
+h3 {
+  font-size: 1.3em;
+  padding: 0.2em 0px;
+  margin: 3em 0px 1.1em;
+  color: rgb(51, 51, 51);
+  font-weight: normal;
+}
+
 h4 {
   font-weight: 600;
   color: #000;
+}
+
+h5 {
+  border-bottom: 1px solid rgba(38, 50, 56, 0.3);
+  margin: 1em 0px;
+  color: rgba(38, 50, 56, 0.5);
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 0.929em;
+  line-height: 20px;
 }
 
 code {

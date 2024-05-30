@@ -24,3 +24,19 @@
   text-overflow: ellipsis;
   padding: 0;
 }
+
+.side_menu_item {
+  display: flex;
+  cursor: pointer;
+  transition: all .2s;
+  padding: 12.5px 20px;
+  justify-content: space-between;
+  font-size: 0.929em;
+  text-transform: none;
+  font-family: Montserrat, sans-serif;
+}
+
+.side_menu_item:hover {
+  color: rgb(50, 50, 159);
+  background: rgb(225, 225, 225);
+}
