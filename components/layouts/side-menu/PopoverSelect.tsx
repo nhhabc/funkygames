@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 
 const PopoverSelect = () => {
   const [currentProvider, setCurrentProvider] = useState({
-    name: "",
+    name: "Select Provider",
     value: "",
     img: ""
   })
