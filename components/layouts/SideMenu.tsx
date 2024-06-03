@@ -1,6 +1,6 @@
 "use client"
 import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Flex, Image, Text } from '@chakra-ui/react'
-import React, { useMemo } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import SearchIcon from "@/public/svg/search-icon.svg"
 import styles from "./css/SideMenu.module.css"
 import { data } from '@/constants/dummy-data/dummy-data'
@@ -10,6 +10,7 @@ import ApiBrand from '../utils/ApiBrand'
 
 const SideMenu = () => {
   const {currentContentSection} = useSelector((state: RootState) => state.client)
+  const [currentMenuIndex, setCurrentMenuIndex] = useState<number|number[]>(-1)
 
   const handleMenuSelect = (id: string) => {
     const violation = document.getElementById(id); 
@@ -20,14 +21,16 @@ const SideMenu = () => {
     }
   }
 
-  const currentMenuIndex = useMemo(() => {
+  useEffect(() => {
     const dataSliced = data.slice(8)
     const indexFirstTime = dataSliced.findIndex(item => item.children.some((child) => child.id === currentContentSection))
     const indexSecondTime = dataSliced.findIndex(item => item.id == currentContentSection)
+    
     if (indexFirstTime < 0) {
-      return indexSecondTime
+      setCurrentMenuIndex(indexSecondTime)
+    } else {
+      setCurrentMenuIndex(indexFirstTime)
     }
-    return indexFirstTime
   }, [currentContentSection])
 
   return (
@@ -50,7 +53,7 @@ const SideMenu = () => {
         </Box>
         <input className={styles.search_input} placeholder='Search...'/>
       </Box>
-      <Accordion overflow={'hidden'} allowToggle
+      <Accordion overflow={'hidden'} allowToggle onChange={(i) => setCurrentMenuIndex(i)}
         index={currentMenuIndex}>
         <ul className={styles.menu_list}>
           {data.map((item, i) => {

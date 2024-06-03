@@ -20,8 +20,8 @@ const ParamsTable = ({data}: TParamsTableProps) => {
               <tr>
                 <td className={styles.parameter_text}>
                   <span className={styles.noted_table_item}/>
-                  <span style={{cursor: item.type === "object" ? "pointer" : ""}} onClick={() => setIsShowDataObject(!isShowDataObject)}>
-                    {item.name} {item.type === "object" && <ChevronRightIcon transition={".2s"} transform={isShowDataObject ? "rotateZ(90deg)" : "rotateZ(0)"}/>}
+                  <span style={{cursor: item.type.includes("object") ? "pointer" : ""}} onClick={() => setIsShowDataObject(!isShowDataObject)}>
+                    {item.name} {item.type.includes("object") && <ChevronRightIcon transition={".2s"} transform={isShowDataObject ? "rotateZ(90deg)" : "rotateZ(0)"}/>}
                   </span>
                   {item.required && <div className={styles.required}>required</div>}
                 </td>
@@ -34,7 +34,7 @@ const ParamsTable = ({data}: TParamsTableProps) => {
                 </div>
                 </td>
               </tr>
-              {isShowDataObject && item.type === "object" && 
+              {isShowDataObject && item.type.includes("object") && 
               <tr>
                 <td colSpan={2}>
                   <Box m={"1em 0em 1em 1em"} p={"1em"} bg={"rgb(250, 250, 250)"}>
