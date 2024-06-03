@@ -13,7 +13,7 @@
 }
 
 .menu_list {
-  padding-bottom: 32px;
+  padding-bottom: 80px;
   height: calc(100vh - 100px);
   overflow: auto;
 }

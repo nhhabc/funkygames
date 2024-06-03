@@ -1,5 +1,5 @@
 "use client"
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Flex, Image, Text } from '@chakra-ui/react'
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Button, Flex, Image, Popover, PopoverTrigger, Select, Text } from '@chakra-ui/react'
 import React, { useEffect, useMemo, useState } from 'react'
 import SearchIcon from "@/public/svg/search-icon.svg"
 import styles from "./css/SideMenu.module.css"
@@ -7,6 +7,8 @@ import { data } from '@/constants/dummy-data/dummy-data'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/configurations/redux/store'
 import ApiBrand from '../utils/ApiBrand'
+import { CheckCircleIcon, ChevronDownIcon } from '@chakra-ui/icons'
+import PopoverSelect from './side-menu/PopoverSelect'
 
 const SideMenu = () => {
   const {currentContentSection} = useSelector((state: RootState) => state.client)
@@ -94,6 +96,10 @@ const SideMenu = () => {
               })}
         </ul>
       </Accordion>
+      <PopoverSelect/>
+      {/* <Select size={"sm"} _focusVisible={{outline: "none"}} placeholder='Select Provider'>
+        <option value='option1'>MIMI</option>
+      </Select> */}
     </Flex>
   )
 }
