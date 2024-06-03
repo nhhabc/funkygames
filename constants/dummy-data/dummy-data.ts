@@ -505,7 +505,7 @@ export const apiData = [
         sample: [
           {
             name: "Request samples",
-            payload: "payload",
+            payload: "Payload",
             contentType: "application/json",
             json: {
               "gameCode": "string",
@@ -712,7 +712,7 @@ export const apiData = [
         sample: [
           {
             name: "Request samples",
-            payload: "payload",
+            payload: "Payload",
             contentType: "application/json",
             json: {
               "playerId": "string",
@@ -854,7 +854,7 @@ export const apiData = [
         sample: [
           {
             name: "Request samples",
-            payload: "payload",
+            payload: "Payload",
             contentType: "application/json",
             json: {
               "playerId": "string",
@@ -1042,7 +1042,7 @@ export const apiData = [
         sample: [
           {
             name: "Request samples",
-            payload: "payload",
+            payload: "Payload",
             contentType: "application/json",
             json: {
               "bet": {
@@ -1256,7 +1256,7 @@ export const apiData = [
         sample: [
           {
             name: "Request samples",
-            payload: "payload",
+            payload: "Payload",
             contentType: "application/json",
             json: {
               "refNo": "string",
@@ -1410,7 +1410,7 @@ export const apiData = [
         sample: [
           {
             name: "Request samples",
-            payload: "payload",
+            payload: "Payload",
             contentType: "application/json",
             json: {
               "playerId": "string",
@@ -1531,7 +1531,7 @@ export const apiData = [
         sample: [
           {
             name: "Request samples",
-            payload: "payload",
+            payload: "Payload",
             contentType: "application/json",
             json: {
               "fpId": 0,
@@ -1650,7 +1650,7 @@ export const apiData = [
         sample: [
           {
             name: "Request samples",
-            payload: "payload",
+            payload: "Payload",
             contentType: "application/json",
             json: {
               "playerId": "string",
@@ -1767,7 +1767,7 @@ export const apiData = [
         sample: [
           {
             name: "Request samples",
-            payload: "payload",
+            payload: "Payload",
             contentType: "application/json",
             json: {
               "playerId": "string",
@@ -1970,7 +1970,7 @@ export const apiData = [
         sample: [
           {
             name: "Request samples",
-            payload: "payload",
+            payload: "Payload",
             contentType: "application/json",
             json: {
               "refNo": "string",
@@ -2135,7 +2135,7 @@ export const apiData = [
         sample: [
           {
             name: "Request samples",
-            payload: "payload",
+            payload: "Payload",
             contentType: "application/json",
             json: {
               "gameCode": "string",
@@ -2314,7 +2314,7 @@ export const apiData = [
         sample: [
           {
             name: "Request samples",
-            payload: "payload",
+            payload: "Payload",
             contentType: "application/json",
             json: {
               "gameCode": "string",
@@ -2566,7 +2566,7 @@ export const apiData = [
         sample: [
           {
             name: "Request samples",
-            payload: "payload",
+            payload: "Payload",
             contentType: "application/json",
             json: {
               "playerId": "string",
@@ -2794,7 +2794,7 @@ export const apiData = [
         sample: [
           {
             name: "Request samples",
-            payload: "payload",
+            payload: "Payload",
             contentType: "application/json",
             json: {
               "playerId": "string",
@@ -3002,7 +3002,7 @@ export const apiData = [
         sample: [
           {
             name: "Request samples",
-            payload: "payload",
+            payload: "Payload",
             contentType: "application/json",
             json: {
               "startDate": "2019-08-24T14:15:22Z",
@@ -3213,7 +3213,7 @@ export const apiData = [
         sample: [
           {
             name: "Request samples",
-            payload: "payload",
+            payload: "Payload",
             contentType: "application/json",
             json: {
               "startDate": "2019-08-24T14:15:22Z",
