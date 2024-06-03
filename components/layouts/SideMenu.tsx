@@ -11,8 +11,6 @@ import ApiBrand from '../utils/ApiBrand'
 const SideMenu = () => {
   const {currentContentSection} = useSelector((state: RootState) => state.client)
 
-  console.log(data.slice(8).findIndex(item => item.id == currentContentSection));
-
   const handleMenuSelect = (id: string) => {
     const violation = document.getElementById(id); 
     if (violation) {
@@ -52,7 +50,7 @@ const SideMenu = () => {
         </Box>
         <input className={styles.search_input} placeholder='Search...'/>
       </Box>
-      <Accordion overflow={'hidden'} allowToggle 
+      <Accordion overflow={'hidden'} allowToggle
         index={currentMenuIndex}>
         <ul className={styles.menu_list}>
           {data.map((item, i) => {
@@ -73,7 +71,6 @@ const SideMenu = () => {
                 bgColor={currentContentSection === item.id ? "rgb(225, 225, 225)" : "rgb(250, 250, 250)"}
                 onClick={() => handleMenuSelect(item.id)}
                 >
-
                 <Text w={"auto"} verticalAlign={"middle"} overflow={"hidden"} textOverflow={"ellipsis"}>
                   {item.name}
                 </Text>
