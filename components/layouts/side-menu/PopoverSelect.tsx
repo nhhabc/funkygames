@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 const PopoverSelect = () => {
   const [currentProvider, setCurrentProvider] = useState({
     name: "",
+    value: "",
     img: ""
   })
 
@@ -15,7 +16,7 @@ const PopoverSelect = () => {
           <PopoverTrigger>
             <Button sx={popoverButton}>
               <Flex minW={"100%"} borderRadius={"10px"} alignItems={'center'} justifyContent={'space-between'}>
-                <Text fontWeight={400} fontSize={"14px"}>{currentProvider.name ?? "Select Provider"}</Text>
+                <Text fontWeight={400} fontSize={"14px"}>{currentProvider.name ? currentProvider.name : "Select Provider"}</Text>
                 <ChevronDownIcon/>    
               </Flex>
             </Button>
@@ -44,23 +45,28 @@ export default PopoverSelect
 
 const providers = [
   {
-    name: "Please select a provider",
+    name: "Select Provider",
+    value: "",
     img: ""
   },
   {
     name: "MIMI",
+    value: "MIMI",
     img: "/images/MimiLogo.png"
   },
   {
     name: "JILI",
+    value: "JILI",
     img: "/images/Logo-Jili.png"
   },
   {
     name: "King Maker",
+    value: "King Maker",
     img: "/images/117.png"
   },
   {
     name: "JDB",
+    value: "JDB",
     img: "/images/41.png"
   },
 ]
