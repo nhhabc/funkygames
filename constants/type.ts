@@ -30,7 +30,7 @@ export type TResponse = {
   parameter: TParameter[],
 }
 
-type TParameter = {
+export type TParameter = {
   name: string,
   description: string,
   params: TParam[]
@@ -41,7 +41,7 @@ type TParam = {
   type: string,
   required: boolean,
   description: string,
-  restriction: string[],
+  restriction?: string[],
   schema?: TSchema[]
 }
 

@@ -7,8 +7,9 @@ import { data } from '@/constants/dummy-data/dummy-data'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/configurations/redux/store'
 import ApiBrand from '../utils/ApiBrand'
-import { CheckCircleIcon, ChevronDownIcon } from '@chakra-ui/icons'
 import PopoverSelect from './side-menu/PopoverSelect'
+
+const numberDataPreview = data.filter(item => item.children.length > 0).length
 
 const SideMenu = () => {
   const {currentContentSection} = useSelector((state: RootState) => state.client)
@@ -18,13 +19,13 @@ const SideMenu = () => {
     const violation = document.getElementById(id); 
     if (violation) {
       window.scrollTo({
-        top: violation?.offsetTop - 100,
+        top: violation?.offsetTop,
       });
     }
   }
 
   useEffect(() => {
-    const dataSliced = data.slice(8)
+    const dataSliced = data.slice(numberDataPreview)
     const indexFirstTime = dataSliced.findIndex(item => item.children.some((child) => child.id === currentContentSection))
     const indexSecondTime = dataSliced.findIndex(item => item.id == currentContentSection)
     
@@ -94,12 +95,9 @@ const SideMenu = () => {
                   </AccordionPanel>}
                 </AccordionItem>)
               })}
+          <PopoverSelect/>
         </ul>
       </Accordion>
-      <PopoverSelect/>
-      {/* <Select size={"sm"} _focusVisible={{outline: "none"}} placeholder='Select Provider'>
-        <option value='option1'>MIMI</option>
-      </Select> */}
     </Flex>
   )
 }

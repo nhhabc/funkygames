@@ -3,6 +3,7 @@ import React from 'react'
 import baseTheme from './chakra-ui/theme'
 import { Provider } from 'react-redux'
 import { store } from './redux/store'
+import { ScrollProvider } from '@/hooks/useScrollProvider'
 
 type TMainProps = {
   children: React.ReactNode
@@ -12,7 +13,9 @@ const Main = ({children}: TMainProps) => {
   return (
     <Provider store={store}>
       <ChakraProvider theme={baseTheme}>
-        {children}
+        <ScrollProvider>
+          {children}
+        </ScrollProvider>
       </ChakraProvider>
     </Provider>
   )

@@ -73,6 +73,7 @@ const providers = [
 
 const popoverButton = {
   h:"35px",
+  w: "100%",
   color:"#344050",
   border:"1px solid #d8e2ef",
   borderRadius:"0.25rem",

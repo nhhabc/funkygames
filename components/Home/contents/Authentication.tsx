@@ -6,7 +6,7 @@ import styles from '../css/ContentDisplay.module.css'
 
 const Authentication = () => {
   return (
-    <ViewDetect id='authentication'>
+    <ViewDetect id='authentication' threshold={0.6}>
       <div className={styles.section}>
         <Flex>
           <div className={styles.inside_section}>

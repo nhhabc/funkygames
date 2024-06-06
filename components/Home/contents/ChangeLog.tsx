@@ -7,7 +7,7 @@ import styles from '../css/ContentDisplay.module.css'
 
 const ChangeLog = () => {
   return (
-    <ViewDetect id='change_log'>
+    <ViewDetect id='change_log' threshold={0.3}>
       <div className={styles.section}>
         <Flex>
           <div className={styles.inside_section}>

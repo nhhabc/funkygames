@@ -6,7 +6,7 @@ import styles from '../css/ContentDisplay.module.css'
 
 const ErrorCode = () => {
   return (
-      <ViewDetect id='error_code'>
+      <ViewDetect id='error_code' threshold={0.7}>
         <div className={styles.section}>
           <Flex>
             <div className={styles.inside_section}>

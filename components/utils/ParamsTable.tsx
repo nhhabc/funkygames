@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import styles from "@/components/Home/css/ContentDisplay.module.css"
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { Box, Text } from '@chakra-ui/react'
+import { TParameter } from '@/constants/type'
 
 type TParamsTableProps = {
-  data: TTableData
+  data: TParameter
 }
 
 const ParamsTable = ({data}: TParamsTableProps) => {
@@ -14,7 +15,7 @@ const ParamsTable = ({data}: TParamsTableProps) => {
     <>
       <h5>{data.name}{data.description && ":"} <span className={styles.note}>{data.description}</span></h5>
       <table className={styles.parameter_table}>
-          {data.params.map((item, i) => (
+          {data?.params?.map((item, i) => (
             <tbody key={i}>
               <tr>
                 <td className={styles.parameter_text}>
@@ -67,28 +68,6 @@ const ParamsTable = ({data}: TParamsTableProps) => {
 }
 
 export default ParamsTable
-
-type TSchema = {
-  name: string,
-  type: string,
-  required: boolean
-  description: string,
-}
-
-type TParams = {
-  name: string,
-  type: string,
-  required: boolean,
-  description: string,
-  restriction: string[],
-  schema?: TSchema[]
-}
-
-type TTableData = {
-  name: string;
-  description: string;
-  params: TParams[]
-}
 
 const requirementText = {
   verticalAlign: "middle",
