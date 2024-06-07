@@ -1,8 +1,7 @@
 import { clientAction } from '@/configurations/redux/client-slice'
 import { useScrollProvider } from '@/hooks/useScrollProvider'
 import { Box } from '@chakra-ui/react'
-import React, { LegacyRef, ReactElement, useEffect, useRef } from 'react'
-import { InView } from 'react-intersection-observer'
+import React, { useEffect, useRef } from 'react'
 import { useDispatch } from 'react-redux'
 
 type TViewDetect = {
@@ -19,8 +18,7 @@ const ViewDetect = ({children, threshold, id}: TViewDetect) => {
   useEffect(() => {
     if (ref.current) {
       const {offsetTop} = ref?.current
-      const {height, y} = ref?.current?.getBoundingClientRect()
-      console.log(ref?.current?.getBoundingClientRect());
+      const {y} = ref?.current?.getBoundingClientRect()
       
       if (offsetTop <= offset && offset > y) {
         dispatch(clientAction.setCurrentContentSection(id))

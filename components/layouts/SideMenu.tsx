@@ -1,6 +1,6 @@
 "use client"
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Button, Flex, Image, Popover, PopoverTrigger, Select, Text } from '@chakra-ui/react'
-import React, { useEffect, useMemo, useState } from 'react'
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Flex, Image, Text } from '@chakra-ui/react'
+import React, { useEffect, useState } from 'react'
 import SearchIcon from "@/public/svg/search-icon.svg"
 import styles from "./css/SideMenu.module.css"
 import { data } from '@/constants/dummy-data/dummy-data'
