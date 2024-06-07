@@ -14,7 +14,7 @@ const ResponseItem = ({response}: TResponseItem) => {
 
   return (
     <Box>
-      <button className={styles.respond_button} onClick={() => setIsShowResponses(!isShowResponses)}>
+      <button className={`${styles.respond_button} ${response.code === 200 ? styles.ok : styles.error}`} onClick={() => setIsShowResponses(!isShowResponses)}>
         <span className={styles.chavron_icon}>
           <ChevronDownIcon transition={".2s"} transform={!isShowResponses ? "rotateZ(-90deg)" : "rotateZ(0)"}/>
         </span>

@@ -80,7 +80,7 @@ const SideMenu = () => {
                         color={currentContentSection === child.id ? "rgb(50, 50, 159)" : "rgb(51, 51, 51)"} 
                         bgColor={currentContentSection === child.id ? "rgb(225, 225, 225)" : "rgb(250, 250, 250)"}
                         onClick={() => handleScrollToElement(child.id)}>
-                        {child.type && <ApiBrand type={child.type} fromMenu={true}/>}
+                        {child.type ? <ApiBrand type={child.type} fromMenu={true}/> : <Box w={"15px"}/>}
                         {child.name}
                       </Flex>
                     ))}

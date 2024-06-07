@@ -165,8 +165,16 @@
   margin-bottom: 4px;
   line-height: 1.5em;
   cursor: pointer;
+}
+
+.ok {
   color: rgb(29, 129, 39);
   background-color: rgba(29, 129, 39, 0.07);
+}
+
+.error {
+  color: rgb(163, 13, 13);
+  background-color: rgba(129, 41, 29, 0.07);
 }
 
 .chavron_icon {
