@@ -32,7 +32,7 @@ const ApiBrand = ({type, fromMenu = false}: TApiBrand) => {
 export default ApiBrand
 
 const menuBrand = {
-  width:"9ex",
+  minW:"9ex",
   h:"13px",
   display:"inline-block",
   lineHeight:"13px",

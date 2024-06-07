@@ -221,7 +221,7 @@ export const data = [
         type: ApiEnum.GET,
       },
       {
-        name: "GetGameHistoryUrlByRoundId",
+        name: "Get Game History Url By RoundId",
         id: "getgamehistoryurlbyroundid",
         type: ApiEnum.POST,
       },
@@ -5239,7 +5239,7 @@ export const apiData = [
         ]
       },
       {
-        title: "GetGameHistoryUrlByRoundId",
+        title: "Get Game History Url By RoundId",
         id: "getgamehistoryurlbyroundid",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/data/get-game-history-url-by-roundid",
