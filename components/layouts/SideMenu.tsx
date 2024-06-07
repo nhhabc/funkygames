@@ -19,7 +19,7 @@ const SideMenu = () => {
     const violation = document.getElementById(id); 
     if (violation) {
       window.scrollTo({
-        top: violation?.offsetTop,
+        top: violation?.offsetTop + 1,
       });
     }
   }
