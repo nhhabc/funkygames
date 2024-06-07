@@ -537,7 +537,42 @@ export const apiData = [
               }
             ]
           },
-          
+          {
+            code: 500,
+            message: "InternalServer",
+            parameter: [
+              {
+                name: "RESPONSE SCHEMA",
+                description: "application/json",
+                params: [
+                  {
+                    name: "error",
+                    type: "string",
+                    required: false,
+                    description: "1 //has error if greater than 0",
+                    restriction: [],
+                    schema: []
+                  },
+                  {
+                    name: "message",
+                    type: "string",
+                    required: false,
+                    description: "corresponding message",
+                    restriction: [],
+                    schema: []
+                  },
+                  {
+                    name: "data",
+                    type: "string",
+                    required: false,
+                    description: "",
+                    restriction: [],
+                    schema: []
+                  }
+                ]
+              }
+            ]
+          }
         ],
         sample: [
           {
@@ -570,9 +605,9 @@ export const apiData = [
             contentType: "application/json",
             description: null,
             json: {
-              error: [],
-              message: [],
-              data: []
+              error: 1,//has error if greater than 0
+              message: "corresponding message",
+              data: ""
             }
           }
         ]
