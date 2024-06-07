@@ -1,6 +1,6 @@
 import HeadingText from '@/components/utils/HeadingText'
 import ViewDetect from '@/components/utils/ViewDetect'
-import { Flex, Image, ListItem, Text, UnorderedList } from '@chakra-ui/react'
+import { Flex, Text } from '@chakra-ui/react'
 import React from 'react'
 import styles from '../css/ContentDisplay.module.css'
 import Link from 'next/link'
