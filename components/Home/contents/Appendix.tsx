@@ -29,8 +29,7 @@ const Appendix = () => {
                     <td>{item.error}</td>
                     <td><>
                       {item.description.map((item, i) => (
-                        <Text ml={5} key={i}>{`- ${item}`}</Text>
-
+                        <Text ml={5} key={i}>{item}</Text>
                       ))}
                     </></td>
                   </tr>

@@ -82,7 +82,7 @@ const SideMenu = () => {
                         onClick={() => handleScrollToElement(child.id)}>
                         {child.type ? <ApiBrand type={child.type} fromMenu={true}/> : <Box w={"15px"}/>}
                         {child.name}
-                      </Flex>
+                      </Flex> 
                     ))}
                   </AccordionPanel>}
                 </AccordionItem>)
