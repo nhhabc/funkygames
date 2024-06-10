@@ -712,7 +712,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "{{authentication_token}}",
                     restriction: [],
@@ -748,7 +748,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -863,7 +863,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "{{authentication_token}}",
                     restriction: [],
@@ -899,7 +899,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -1063,7 +1063,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -1156,7 +1156,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -1223,7 +1223,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -1320,7 +1320,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -1363,7 +1363,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -1472,7 +1472,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -1522,7 +1522,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -1634,7 +1634,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -1683,7 +1683,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -1820,7 +1820,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "http://the-link.url",
                     restriction: [],
@@ -1856,7 +1856,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -1944,7 +1944,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -1980,7 +1980,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -2054,7 +2054,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -2090,7 +2090,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -2177,7 +2177,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -2213,7 +2213,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -2342,7 +2342,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -2391,7 +2391,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -2533,7 +2533,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -2569,7 +2569,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -2721,7 +2721,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -2757,7 +2757,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -2927,7 +2927,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -2970,7 +2970,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -3103,7 +3103,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "Dragon Kingdom",
                     restriction: [],
@@ -3139,7 +3139,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -3247,7 +3247,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -3283,7 +3283,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -3431,7 +3431,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -3480,7 +3480,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -3645,7 +3645,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -3694,7 +3694,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -3850,7 +3850,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -3886,7 +3886,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "[]",
                     restriction: [],
@@ -4028,7 +4028,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -4064,7 +4064,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -4225,7 +4225,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -4274,7 +4274,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -4416,7 +4416,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "http",
                     restriction: [],
@@ -4452,7 +4452,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -4585,7 +4585,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -4979,7 +4979,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -5052,7 +5052,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -5192,7 +5192,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -5265,7 +5265,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -5384,7 +5384,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -5420,7 +5420,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -5580,7 +5580,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "http",
                     restriction: [],
@@ -5616,7 +5616,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -5729,7 +5729,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -5765,7 +5765,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "[]",
                     restriction: [],
@@ -5926,7 +5926,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -5975,7 +5975,7 @@ export const apiData = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "",
                     restriction: [],
@@ -6132,7 +6132,7 @@ export const apiProvider = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "10000.23",
                     restriction: [],
@@ -7138,7 +7138,7 @@ export const apiProvider = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "10000.23",
                     restriction: [],
@@ -8144,7 +8144,7 @@ export const apiProvider = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "10000.23",
                     restriction: [],
@@ -9150,7 +9150,7 @@ export const apiProvider = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "10000.23",
                     restriction: [],
@@ -10156,7 +10156,7 @@ export const apiProvider = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "10000.23",
                     restriction: [],
@@ -11162,7 +11162,7 @@ export const apiProvider = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "10000.23",
                     restriction: [],
@@ -12168,7 +12168,7 @@ export const apiProvider = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "10000.23",
                     restriction: [],
@@ -13174,7 +13174,7 @@ export const apiProvider = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "10000.23",
                     restriction: [],
@@ -14180,7 +14180,7 @@ export const apiProvider = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "10000.23",
                     restriction: [],
@@ -15186,7 +15186,7 @@ export const apiProvider = [
                   },
                   {
                     name: "data",
-                    type: "string",
+                    type: "object",
                     required: false,
                     description: "10000.23",
                     restriction: [],
