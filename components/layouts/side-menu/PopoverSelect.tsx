@@ -1,14 +1,12 @@
 import { clientAction } from '@/configurations/redux/client-slice'
-import { RootState } from '@/configurations/redux/store'
 import { useOutsideClick } from '@/hooks/useOutsideHandler'
 import { ChevronDownIcon } from '@chakra-ui/icons'
 import { Button, Flex, Image, Popover, PopoverContent, PopoverTrigger, Text } from '@chakra-ui/react'
-import React, { useRef, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import React, { useRef } from 'react'
+import { useDispatch } from 'react-redux'
 
 const PopoverSelect = () => {
   const popoverRef = useRef<any>(null)
-  const {currentProvider} = useSelector((state: RootState) => state.client)
   const dispatch = useDispatch()
 
   return (
@@ -21,7 +19,7 @@ const PopoverSelect = () => {
           <PopoverTrigger>
             <Button sx={popoverButton}>
               <Flex minW={"100%"} borderRadius={"10px"} alignItems={'center'} justifyContent={'space-between'}>
-                <Text fontWeight={400} fontSize={"14px"}>{currentProvider.name ? currentProvider.name : "Seamless"}</Text>
+                <Text fontWeight={400} fontSize={"14px"}>Seamless</Text>
                 <ChevronDownIcon/>    
               </Flex>
             </Button>

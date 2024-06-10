@@ -1,5 +1,5 @@
 "use client"
-import { Accordion, Box, Flex, Image, Text } from '@chakra-ui/react'
+import { Accordion, Box, Center, Flex, Image, Text } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import SearchIcon from "@/public/svg/search-icon.svg"
 import styles from "./css/SideMenu.module.css"
@@ -10,7 +10,7 @@ import PopoverSelect from './side-menu/PopoverSelect'
 import { handleScrollToElement } from '@/helpers/HandleScrollToElement'
 import MenuAccordion from './side-menu/MenuAccordion'
 
-const numberDataPreview = data.filter(item => item.children.length > 0).length
+const numberDataPreview = data.filter(item => item.children.length === 0).length
 
 const SideMenu = () => {
   const {currentContentSection, currentProvider} = useSelector((state: RootState) => state.client)
@@ -28,16 +28,14 @@ const SideMenu = () => {
     }
   }, [currentContentSection])
 
-  console.log(currentProvider);
-  
   return (
     <Flex flexDir={"column"} pos={"sticky"} w={"260px"} top={"0px"} h={"calc(0px + 100vh)"} bgColor={"rgb(250, 250, 250)"}>
-      <Box>
+      <Center>
         <Image alt='' src='/images/MimiLogo.png' 
-          maxH={"260px"}
-          maxW={"260px"}
+          h={"70px"}
+          objectFit={"cover"}
           p={"2px"}/>
-      </Box>
+      </Center>
       <Box py={"5px"} pos={'relative'}>
         <Box position="absolute"
             left="20px"
