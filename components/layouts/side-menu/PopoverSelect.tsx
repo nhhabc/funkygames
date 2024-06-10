@@ -52,17 +52,17 @@ export default PopoverSelect
 const providers = [
   {
     name: "AdvantPlay",
-    value: "advantplay",
+    id: "advantplay",
     img: ""
   },
   {
     name: "AWC",
-    value: "awc",
+    id: "awc",
     img: ""
   },
   {
     name: "MIMI",
-    value: "mimi",
+    id: "mimi",
     img: "/images/MimiLogo.png"
   },
   {
