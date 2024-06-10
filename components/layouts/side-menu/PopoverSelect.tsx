@@ -67,7 +67,7 @@ const providers = [
   },
   {
     name: "JILI",
-    value: "jili",
+    id: "jili",
     img: "/images/Logo-Jili.png"
   },
   {
