@@ -14,6 +14,7 @@ const PopoverSelect = () => {
   return (
     <Popover>
       {({ isOpen, onClose }) => {
+        // eslint-disable-next-line react-hooks/rules-of-hooks
         useOutsideClick(popoverRef, onClose)
 
         return (<>
