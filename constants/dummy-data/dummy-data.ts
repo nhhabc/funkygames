@@ -9285,7 +9285,7 @@ export const apiData = [
         ]
       },
     ]
-  }
+  },
 ]
 
 export const erorcodes = [

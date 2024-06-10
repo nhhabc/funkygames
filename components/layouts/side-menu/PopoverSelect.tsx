@@ -44,31 +44,72 @@ const PopoverSelect = () => {
 export default PopoverSelect
 
 const providers = [
+ 
   {
-    name: "Select Provider",
-    value: "",
+    name: "SBO",
+    value: "sbo",
+    img: ""
+  },
+  {
+    name: "AG",
+    value: "ag",
+    img: ""
+  },
+  {
+    name: "Pragmatic Play",
+    value: "pragmatic_play",
+    img: ""
+  },
+  {
+    name: "IMOne",
+    value: "imone",
+    img: ""
+  },
+  {
+    name: "AWC",
+    value: "awc",
     img: ""
   },
   {
     name: "MIMI",
-    value: "MIMI",
+    value: "mimi",
     img: "/images/MimiLogo.png"
   },
   {
-    name: "JILI",
-    value: "JILI",
-    img: "/images/Logo-Jili.png"
+    name: "Red Tiger",
+    value: "red_tiger",
+    img: ""
   },
   {
-    name: "King Maker",
-    value: "King Maker",
-    img: "/images/117.png"
+    name: "PGSoft",
+    value: "pgsoft",
+    img: ""
   },
   {
-    name: "JDB",
-    value: "JDB",
-    img: "/images/41.png"
+    name: "Pragmatic Play Live",
+    value: "pragmatic_play_live",
+    img: ""
   },
+  {
+    name: "WM Live",
+    value: "wm_live",
+    img: ""
+  },
+  {
+    name: "Spade Gaming",
+    value: "spade_gaming",
+    img: ""
+  },
+  {
+    name: "Gamatron",
+    value: "gamatron",
+    img: ""
+  },
+  {
+    name: "EvoPlay",
+    value: "evoplay",
+    img: ""
+  }
 ]
 
 const popoverButton = {
