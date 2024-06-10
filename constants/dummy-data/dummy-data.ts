@@ -11463,20 +11463,20 @@ export const apiProvider = [
             payload: "200",
             contentType: "application/json",
             json: {
-              "balance":45491.45,
-              "error":0,
-              "message":null,
-              "data":[
+              "balance": 12082.02,
+              "error": 0,
+              "message": null,
+              "data": [
                 {
-                "userId":"9088330",
-                "transId":"mm-142540802",
-                "balance":45491.45,
-                "error":0,
-                "message":null,
-                "dup":false
+                  "userId": "9088328",
+                  "transId": "20240610124628262151804",
+                  "balance": 12082.02,
+                  "error": 0,
+                  "message": null,
+                  "dup": false
                 }
               ],
-              "statementDate":null
+              "statementDate": null,
               }
           },
           {
@@ -12469,20 +12469,20 @@ export const apiProvider = [
             payload: "200",
             contentType: "application/json",
             json: {
-              "balance":45491.45,
-              "error":0,
-              "message":null,
-              "data":[
+              "balance": 12152.02,
+              "error": 0,
+              "message": null,
+              "data": [
                 {
-                "userId":"9088330",
-                "transId":"mm-142540802",
-                "balance":45491.45,
-                "error":0,
-                "message":null,
-                "dup":false
+                  "userId": "9088328",
+                  "transId": "2147668209",
+                  "balance": 12152.02,
+                  "error": 0,
+                  "message": null,
+                  "dup": false
                 }
               ],
-              "statementDate":null
+              "statementDate": null,
               }
           },
           {
@@ -13475,20 +13475,20 @@ export const apiProvider = [
             payload: "200",
             contentType: "application/json",
             json: {
-              "balance":45491.45,
-              "error":0,
-              "message":null,
-              "data":[
+              "balance": 12102.02,
+              "error": 0,
+              "message": null,
+              "data": [
                 {
-                "userId":"9088330",
-                "transId":"mm-142540802",
-                "balance":45491.45,
-                "error":0,
-                "message":null,
-                "dup":false
+                  "userId": "9088328",
+                  "transId": "SEXYBCRT_BAC-316321616",
+                  "balance": 12102.02,
+                  "error": 0,
+                  "message": null,
+                  "dup": false
                 }
               ],
-              "statementDate":null
+              "statementDate": null,
               }
           },
           {
@@ -14481,20 +14481,20 @@ export const apiProvider = [
             payload: "200",
             contentType: "application/json",
             json: {
-              "balance":45491.45,
-              "error":0,
-              "message":null,
-              "data":[
+              "balance": 12151.14,
+              "error": 0,
+              "message": null,
+              "data": [
                 {
-                "userId":"9088330",
-                "transId":"mm-142540802",
-                "balance":45491.45,
-                "error":0,
-                "message":null,
-                "dup":false
+                  "userId": "9088328",
+                  "transId": "am6ErG7kJZlPKc",
+                  "balance": 12151.14,
+                  "error": 0,
+                  "message": null,
+                  "dup": false
                 }
               ],
-              "statementDate":null
+              "statementDate": null,
               }
           },
           {
@@ -15487,20 +15487,20 @@ export const apiProvider = [
             payload: "200",
             contentType: "application/json",
             json: {
-              "balance":45491.45,
-              "error":0,
-              "message":null,
-              "data":[
+              "balance": 12138.34,
+              "error": 0,
+              "message": null,
+              "data": [
                 {
-                "userId":"9088330",
-                "transId":"mm-142540802",
-                "balance":45491.45,
-                "error":0,
-                "message":null,
-                "dup":false
+                  "userId": "9088328",
+                  "transId": "Funky_tt_4xJiJiJix6370x101657",
+                  "balance": 12138.34,
+                  "error": 0,
+                  "message": null,
+                  "dup": false
                 }
               ],
-              "statementDate":null
+              "statementDate": null,
               }
           },
           {
