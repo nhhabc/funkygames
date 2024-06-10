@@ -5,7 +5,7 @@ export const clientSlice = createSlice({
   initialState: {
     currentContentSection: "",
     currentProvider: {
-      name: "Select Provider",
+      name: "Seamless",
       id: "",
     },
   },

@@ -21,7 +21,7 @@ const PopoverSelect = () => {
           <PopoverTrigger>
             <Button sx={popoverButton}>
               <Flex minW={"100%"} borderRadius={"10px"} alignItems={'center'} justifyContent={'space-between'}>
-                <Text fontWeight={400} fontSize={"14px"}>{currentProvider.name ? currentProvider.name : "Select Provider"}</Text>
+                <Text fontWeight={400} fontSize={"14px"}>{currentProvider.name ? currentProvider.name : "Seamless"}</Text>
                 <ChevronDownIcon/>    
               </Flex>
             </Button>
