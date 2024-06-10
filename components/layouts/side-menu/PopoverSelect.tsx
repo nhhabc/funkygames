@@ -70,18 +70,8 @@ const providers = [
     img: "/images/Logo-Jili.png"
   },
   {
-    name: "King Maker",
-    value: "king_maker",
-    img: "/images/117.png"
-  },
-  {
-    name: "JDB",
-    value: "jdb",
-    img: "/images/41.png"
-  },
-  {
-    name: "Red Tiger",
-    id: "red_tiger",
+    name: "Funky",
+    id: "funky",
     img: ""
   },
   {
@@ -90,18 +80,19 @@ const providers = [
     img: ""
   },
   {
-    name: "Spade Gaming",
-    id: "spade_gaming",
+    name: "Red Tiger",
+    id: "red_tiger",
+    img: ""
+  },
+ 
+  {
+    name: "WM Live",
+    id: "wm_live",
     img: ""
   },
   {
-    name: "Gamatron",
-    id: "gamatron",
-    img: "/images/MimiLogo.png"
-  },
-  {
-    name: "EvoPlay",
-    id: "evoplay",
+    name: "Spade Gaming",
+    id: "spade_gaming",
     img: ""
   },
 ]
