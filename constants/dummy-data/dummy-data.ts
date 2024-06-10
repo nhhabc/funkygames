@@ -150,6 +150,11 @@ export const data = [
         type: ApiEnum.POST,
       },
       {
+        name: "BetListBy",
+        id: "betlistby",
+        type: ApiEnum.POST,
+      },
+      {
         name: "BetListOfAgent",
         id: "betlistofagent",
         type: ApiEnum.POST,
