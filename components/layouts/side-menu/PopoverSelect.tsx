@@ -1,16 +1,15 @@
+import { clientAction } from '@/configurations/redux/client-slice'
+import { RootState } from '@/configurations/redux/store'
 import { useOutsideClick } from '@/hooks/useOutsideHandler'
 import { ChevronDownIcon } from '@chakra-ui/icons'
 import { Button, Flex, Image, Popover, PopoverContent, PopoverTrigger, Text } from '@chakra-ui/react'
 import React, { useRef, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 
 const PopoverSelect = () => {
   const popoverRef = useRef<any>(null)
-
-  const [currentProvider, setCurrentProvider] = useState({
-    name: "Select Provider",
-    value: "",
-    img: ""
-  })
+  const {currentProvider} = useSelector((state: RootState) => state.client)
+  const dispatch = useDispatch()
 
   return (
     <Popover>
@@ -33,7 +32,7 @@ const PopoverSelect = () => {
                 cursor={'pointer'}
                 _hover={{ bgColor: "#eee" }}
                 onClick={() => {
-                  setCurrentProvider(provider)
+                  dispatch(clientAction.setCurrentProvider(provider))
                   onClose()
                 }}>
                 <Text px={"10px"}>{provider.name}</Text>
@@ -50,72 +49,46 @@ const PopoverSelect = () => {
 export default PopoverSelect
 
 const providers = [
- 
   {
-    name: "SBO",
-    value: "sbo",
-    img: ""
-  },
-  {
-    name: "AG",
-    value: "ag",
+    name: "Select Provider",
+    value: "",
     img: ""
   },
   {
     name: "Pragmatic Play",
-    value: "pragmatic_play",
-    img: ""
-  },
-  {
-    name: "IMOne",
-    value: "imone",
-    img: ""
-  },
-  {
-    name: "AWC",
-    value: "awc",
+    id: "pragmatic_play",
     img: ""
   },
   {
     name: "MIMI",
-    value: "mimi",
-    img: "/images/MimiLogo.png"
+    id: "mimi",
+    img: ""
   },
   {
     name: "Red Tiger",
-    value: "red_tiger",
+    id: "red_tiger",
     img: ""
   },
   {
     name: "PGSoft",
-    value: "pgsoft",
-    img: ""
-  },
-  {
-    name: "Pragmatic Play Live",
-    value: "pragmatic_play_live",
-    img: ""
-  },
-  {
-    name: "WM Live",
-    value: "wm_live",
+    id: "pgsoft",
     img: ""
   },
   {
     name: "Spade Gaming",
-    value: "spade_gaming",
+    id: "spade_gaming",
     img: ""
   },
   {
     name: "Gamatron",
-    value: "gamatron",
-    img: ""
+    id: "gamatron",
+    img: "/images/MimiLogo.png"
   },
   {
     name: "EvoPlay",
-    value: "evoplay",
+    id: "evoplay",
     img: ""
-  }
+  },
 ]
 
 const popoverButton = {

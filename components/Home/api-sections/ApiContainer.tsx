@@ -1,6 +1,6 @@
 import HeadingText from '@/components/utils/HeadingText';
 import ViewDetect from '@/components/utils/ViewDetect';
-import { Box, Flex, Text } from '@chakra-ui/react';
+import { Box, ChakraProps, Flex, Text } from '@chakra-ui/react';
 import styles from '@/components/Home/css/ContentDisplay.module.css'
 import React from 'react'
 import { TApiData } from '@/constants/type';
@@ -8,11 +8,11 @@ import ApiBrand from '@/components/utils/ApiBrand';
 import ParamsTable from '@/components/utils/ParamsTable';
 import ResponseItem from './ResponseItem';
 
-type TApiContainerProps = {
+type TApiContainerProps = ChakraProps & {
   data: TApiData;
 }
 
-const ApiContainer = ({data}: TApiContainerProps) => {
+const ApiContainer = ({data, ...props}: TApiContainerProps) => {
 
   return (
     <>

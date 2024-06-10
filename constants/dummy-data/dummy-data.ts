@@ -1,6 +1,4 @@
-import { json } from "stream/consumers"
 import { ApiEnum } from "../enum"
-import { title } from "process"
 
 export const data = [
   {
@@ -296,7 +294,7 @@ export const data = [
   },
 ]
 
-export const providedData = [
+export const providerMenu = [
   {
     name: "Pragmatic Play",
     id: "pragmatic_play",
@@ -8465,6 +8463,10 @@ export const apiData = [
       }
     ]
   },
+  
+]
+
+export const apiProvider = [
   {
     title:"Mimi",
     id: "mimi",
