@@ -1,8 +1,11 @@
+import { useOutsideClick } from '@/hooks/useOutsideHandler'
 import { ChevronDownIcon } from '@chakra-ui/icons'
 import { Button, Flex, Image, Popover, PopoverContent, PopoverTrigger, Text } from '@chakra-ui/react'
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 
 const PopoverSelect = () => {
+  const popoverRef = useRef<any>(null)
+
   const [currentProvider, setCurrentProvider] = useState({
     name: "Select Provider",
     value: "",
@@ -11,8 +14,10 @@ const PopoverSelect = () => {
 
   return (
     <Popover>
-      {({ isOpen, onClose }) => (
-        <>
+      {({ isOpen, onClose }) => {
+        useOutsideClick(popoverRef, onClose)
+
+        return (<>
           <PopoverTrigger>
             <Button sx={popoverButton}>
               <Flex minW={"100%"} borderRadius={"10px"} alignItems={'center'} justifyContent={'space-between'}>
@@ -21,7 +26,8 @@ const PopoverSelect = () => {
               </Flex>
             </Button>
           </PopoverTrigger>
-          <PopoverContent py={"5px"} _focusVisible={{ outline: "none" }} overflow={"auto"} maxW={"260px"}>
+          <PopoverContent py={"5px"} _focusVisible={{ outline: "none" }} overflow={"auto"} maxW={"260px"}
+            ref={popoverRef}>
             {providers.map((provider, i) => (
               <Flex key={i} borderBottom={"1px solid #e5e5e5"} alignItems={'center'} px={"10px"} transition={".2s"} 
                 cursor={'pointer'}
@@ -35,8 +41,8 @@ const PopoverSelect = () => {
               </Flex>
             ))}
           </PopoverContent>
-        </>
-      )}
+        </>)
+      }}
     </Popover>
   )
 }
