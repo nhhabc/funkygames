@@ -28,7 +28,7 @@ const SideMenu = () => {
     }
   }, [currentContentSection])
 
-  console.log(currentContentSection);
+  console.log(currentProvider);
   
   return (
     <Flex flexDir={"column"} pos={"sticky"} w={"260px"} top={"0px"} h={"calc(0px + 100vh)"} bgColor={"rgb(250, 250, 250)"}>
