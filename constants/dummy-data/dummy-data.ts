@@ -16120,14 +16120,14 @@ export const erorcodes = [
 export const providergametype = [
 
   {providerid: "1",	providername:  ["AdvantPlay",], gametypes: "Slot"},
-  {providerid: "1",	providername:  ["AWC",], gametypes: "SexyBaccarat"},
-  {providerid: "2",	providername:  ["MM",], gametypes: "Slot"},
-  {providerid: "3",	providername:  ["JILI",], gametypes: "Slot"},
-  {providerid: "2",	providername:  ["Funky",], gametypes: "Slot"},
-  {providerid: "7",	providername:  ["PGSoft",], gametypes: "Slot"},
-  {providerid: "6",	providername:  ["Red Tiger",], gametypes: "Slot"},
-  {providerid: "9",	providername:  ["WM Live",], gametypes: "Casino"},
-  {providerid: "10",	providername:  ["Spade Gaming",], gametypes: "Slot, Fishing"},
+  {providerid: "2",	providername:  ["AWC",], gametypes: "SexyBaccarat"},
+  {providerid: "3",	providername:  ["MM",], gametypes: "Slot"},
+  {providerid: "4",	providername:  ["JILI",], gametypes: "Slot"},
+  {providerid: "5",	providername:  ["Funky",], gametypes: "Slot"},
+  {providerid: "6",	providername:  ["PGSoft",], gametypes: "Slot"},
+  {providerid: "7",	providername:  ["Red Tiger",], gametypes: "Slot"},
+  {providerid: "8",	providername:  ["WM Live",], gametypes: "Casino"},
+  {providerid: "9",	providername:  ["Spade Gaming",], gametypes: "Slot, Fishing"},
 ]
 
 export const language = [
