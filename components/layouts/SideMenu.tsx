@@ -31,11 +31,10 @@ const SideMenu = () => {
   return (
     <Flex flexDir={"column"} pos={"sticky"} w={"260px"} top={"0px"} h={"calc(0px + 100vh)"} bgColor={"rgb(250, 250, 250)"}>
       <Box>
-        <Image alt='logo' src='https://storage.googleapis.com/funky-spec/logo.png'
+        <Image alt='' src='/images/MimiLogo.png' 
           maxH={"260px"}
           maxW={"260px"}
-          p={"2px"}
-          />
+          p={"2px"}/>
       </Box>
       <Box py={"5px"} pos={'relative'}>
         <Box position="absolute"
