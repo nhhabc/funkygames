@@ -17,7 +17,7 @@ const Preview = () => {
       <div className={styles.section}>
         <Flex>
           <div className={styles.inside_section}>
-            <HeadingText mb={"0.5em"}>Mimi gaming API Document for GameProvider</HeadingText>
+            <HeadingText mb={"0.5em"}>MIMI Gaming API Document for GameProvider</HeadingText>
           </div>
         </Flex>
       </div>
