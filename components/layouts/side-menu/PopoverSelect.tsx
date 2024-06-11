@@ -61,12 +61,12 @@ const providers = [
   {
     name: "MIMI",
     id: "mimi",
-    img: "/images/MimiLogo.png"
+    img: ""
   },
   {
     name: "JILI",
     id: "jili",
-    img: "/images/Logo-Jili.png"
+    img: ""
   },
   {
     name: "Funky",
@@ -79,19 +79,24 @@ const providers = [
     img: ""
   },
   {
-    name: "Red Tiger",
-    id: "red_tiger",
+    name: "PragmaticPlay",
+    id: "pragmaticplay",
     img: ""
   },
- 
+  
   {
-    name: "WM Live",
-    id: "wm_live",
+    name: "Red Tiger",
+    id: "red_tiger",
     img: ""
   },
   {
     name: "Spade Gaming",
     id: "spade_gaming",
+    img: ""
+  },
+  {
+    name: "WM Live",
+    id: "wm_live",
     img: ""
   },
 ]
