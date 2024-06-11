@@ -59,6 +59,11 @@ const providers = [
     img: ""
   },
   {
+    name: "Cookfight",
+    id: "cookfight",
+    img: ""
+  },
+  {
     name: "MIMI",
     id: "mimi",
     img: ""
