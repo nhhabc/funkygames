@@ -19,7 +19,7 @@ const PopoverSelect = () => {
           <PopoverTrigger>
             <Button sx={popoverButton}>
               <Flex minW={"100%"} borderRadius={"10px"} alignItems={'center'} justifyContent={'space-between'}>
-                <Text fontWeight={400} fontSize={"14px"}>Seamless</Text>
+                <Text fontWeight={400} fontSize={"14px"}>Seamless API</Text>
                 <ChevronDownIcon/>    
               </Flex>
             </Button>
@@ -34,7 +34,7 @@ const PopoverSelect = () => {
                   dispatch(clientAction.setCurrentProvider(provider))
                   onClose()
                 }}>
-                <Text px={"10px"}>{provider.name} API</Text>
+                <Text px={"10px"}>{provider.name}</Text>
                 {provider.img && <Image alt={provider.name} src={provider.img} h={"12px"}/>}
               </Flex>
             ))}

@@ -69,7 +69,7 @@ export const data = [
     ]
   },
   {
-    name: "Account",
+    name: "Account API",
     id: "account",
     children: [
       {
@@ -90,7 +90,7 @@ export const data = [
     ]
   },
   {
-    name: "Player",
+    name: "Player API",
     id: "player",
     children: [
       {
@@ -136,7 +136,7 @@ export const data = [
     ]
   },
   {
-    name: "Data",
+    name: "Data API",
     id: "data_domain",
     children: [
       {
@@ -245,7 +245,7 @@ export const data = [
 
 export const providerMenu = [
   {
-    name: "PragmaticPlay API",
+    name: "PragmaticPlay",
     id: "pragmaticplay",
     children: [
       {
@@ -271,7 +271,7 @@ export const providerMenu = [
     ]
   },
   {
-    name: "AWC API",
+    name: "AWC",
     id: "awc",
     children: [
       {
@@ -297,7 +297,7 @@ export const providerMenu = [
     ]
   },
   {
-    name: "Cookfight API",
+    name: "Cookfight",
     id: "cookfight",
     children: [
       {
@@ -373,7 +373,7 @@ export const providerMenu = [
     ]
   },
   {
-    name: "MIMI API",
+    name: "MIMI",
     id: "mimi",
     children: [
       {
@@ -399,7 +399,7 @@ export const providerMenu = [
     ]
   },
   {
-    name: "Red Tiger API",
+    name: "Red Tiger",
     id: "red_tiger",
     children: [
       {
@@ -425,7 +425,7 @@ export const providerMenu = [
     ]
   },
   {
-    name: "PGSoft API",
+    name: "PGSoft",
     id: "pgsoft",
     children: [
       {
@@ -451,7 +451,7 @@ export const providerMenu = [
     ]
   },
   {
-    name: "WM Live API",
+    name: "WM Live",
     id: "wm_live",
     children: [
       {
@@ -477,7 +477,7 @@ export const providerMenu = [
     ]
   },
   {
-    name: "Spade Gaming API",
+    name: "Spade Gaming",
     id: "spade_gaming",
     children: [
       {
@@ -503,7 +503,7 @@ export const providerMenu = [
     ]
   },
   {
-    name: "JILI API",
+    name: "JILI",
     id: "jili",
     children: [
       {
@@ -529,7 +529,7 @@ export const providerMenu = [
     ]
   },
   {
-    name: "AdvantPlay API",
+    name: "AdvantPlay",
     id: "advantplay",
     children: [
       {
@@ -555,7 +555,7 @@ export const providerMenu = [
     ]
   },
   {
-    name: "Funky API",
+    name: "Funky",
     id: "funky",
     children: [
       {
