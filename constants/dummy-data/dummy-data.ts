@@ -18462,13 +18462,12 @@ export const apiProvider = [
             json: {
               "error": 0,
               "message": "",
-              "balance": 1000.20 ,
               "data":[
                   {
                       "error": 0, 
                       "transId": "SEXYBCRT_BAC-60107294", 
                       "userId": 2268242, 
-                      "balance": 1000.20,
+                      
                   }
               ]
               }
@@ -18743,7 +18742,7 @@ export const apiProvider = [
                       "error": 0, 
                       "transId": "SEXYBCRT_BAC-60107294", 
                       "userId": 2268242, 
-                      "balance": 1000.20,
+                      
                   }
               ]
               }
@@ -19056,7 +19055,6 @@ export const apiProvider = [
                       "error": 0, 
                       "transId": "SEXYBCRT_BAC-60107294", 
                       "userId": 2268242, 
-                      "balance": 1000.20,
                   }
               ]
               }
@@ -19308,13 +19306,13 @@ export const apiProvider = [
             json: {
               "error": 0,
               "message": "",
-              "balance": 1000.20,
+              
               "data":[
                   {
                       "error": 0, 
                       "transId": "SEXYBCRT_BAC-60107294", 
                       "userId": 2268242, 
-                      "balance": 1000.20,
+                      
                   }
               ]
               }
@@ -19579,7 +19577,7 @@ export const apiProvider = [
                       "error": "0", 
                       "transId": "SV388_ TXN-60107294", 
                       "userId": "2268242", 
-                      "balance": 1000.20,
+                      
                   }
               ]
             }
@@ -19829,13 +19827,12 @@ export const apiProvider = [
             json: {
               "error": 0,
               "message": "",
-              "balance": 1000.20,
+              
               "data":[
                   {
                       "error": 0, 
                       "transId": "SEXYBCRT_BAC-60107294", 
                       "userId": 2268242, 
-                      "balance": 1000.20,
                   }
               ]
             }
@@ -20101,7 +20098,7 @@ export const apiProvider = [
                       "error": 0, 
                       "transId": "SEXYBCRT_BAC-60107294", 
                       "userId": 2268242, 
-                      "balance": 1000.20,
+                      
                   }
               ]
             }
@@ -20378,13 +20375,12 @@ export const apiProvider = [
             json: {
               "error": 0,
               "message": "",
-              "balance": 1000.20,
+              
               "data":[
                   {
                       "error": 0, 
                       "transId": "SEXYBCRT_BAC-60107294", 
                       "userId": 2268242, 
-                      "balance": 1000.20,
                   }
               ]
             }
@@ -20548,7 +20544,7 @@ export const apiProvider = [
                     "RequestData": "[{{Canncel bet or Settle data refer 4.3 and 4.4}}]"
                   }
               ]
-              }
+            }
           },
           {
             name: "Response samples",
