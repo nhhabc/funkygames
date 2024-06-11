@@ -16846,7 +16846,7 @@ export const apiProvider = [
                 "OrderTime": "2024-05-02T08:44:56.840Z", 
                 "TransGuid": "SEXYBCRT_BAC-60107294", 
                 "Stake": 10.00, 
-                "ProviderId": 6, 
+                "ProviderId": 4, 
                 "GameId": "623743578000", 
                 "ProductType": "League Of Legends", 
                 "GameType": "Slot", 
@@ -17179,7 +17179,7 @@ export const apiProvider = [
                   "Status": "Settled",
                   "ProviderStatus": "Lose",
                   "Provider": "PragmaticPlay",
-                  "ProviderId": 6,
+                  "ProviderId": 4,
                   "CancelType": 0,
                   "ExtraData": "",
                   "BetType": "",
@@ -20717,17 +20717,17 @@ export const erorcodes = [
 
 export const providergametype = [
 
-  {providerid: "1",	providername:  ["AdvantPlay",], gametypes: "Slot"},
-  {providerid: "2",	providername:  ["AWC",], gametypes: "SexyBaccarat"},
-  {providerid: "3",	providername:  ["Cookfight",], gametypes: "Slot"},
-  {providerid: "4",	providername:  ["MIMI",], gametypes: "Slot"},
-  {providerid: "5",	providername:  ["JILI",], gametypes: "Slot"},
-  {providerid: "6",	providername:  ["Funky",], gametypes: "Slot"},
-  {providerid: "7",	providername:  ["PGSoft",], gametypes: "Slot"},
-  {providerid: "8",	providername:  ["PragmaticPlay",], gametypes: "Slot"},
-  {providerid: "9",	providername:  ["Red Tiger",], gametypes: "Slot"},
-  {providerid: "10",	providername:  ["Spade Gaming",], gametypes: "Slot, Fishing"},
-  {providerid: "11",	providername:  ["WM Live",], gametypes: "Casino"},
+  {providerid: "4",	providername:  ["PragmaticPlay",], gametypes: "Slot"},
+  {providerid: "6",	providername:  ["AWC",], gametypes: "SexyBaccarat"},
+  {providerid: "6",	providername:  ["Cookfight",], gametypes: "Cookfight"},
+  {providerid: "8",	providername:  ["MIMI",], gametypes: "Slot"},
+  {providerid: "10",	providername:  ["Red Tiger",], gametypes: "Slot"},
+  {providerid: "11",	providername:  ["PGSoft",], gametypes: "Slot"},
+  {providerid: "13",	providername:  ["WM Live",], gametypes: "Casino"},
+  {providerid: "14",	providername:  ["Spade Gaming",], gametypes: "Slot, Fishing"},
+  {providerid: "17",	providername:  ["JILI",], gametypes: "Slot"},
+  {providerid: "20",	providername:  ["AdvantPlay",], gametypes: "Slot"},
+  {providerid: "21",	providername:  ["Funky",], gametypes: "Slot"},
 ]
 
 export const language = [
