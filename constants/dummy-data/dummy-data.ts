@@ -3288,7 +3288,7 @@ export const apiData = [
         title: "Get Transaction by RefNo",
         id: "get_transaction_by_refno",
         type: ApiEnum.POST,
-        endpoint: "https://{{data_domain}}/data/ TransactionByRefNo",
+        endpoint: "https://{{data_domain}}/data/TransactionByRefNo",
         description: "",
         parameter: [
           {
@@ -3440,7 +3440,7 @@ export const apiData = [
         title: "Get Transaction of Agent",
         id: "get_transaction_of_agent",
         type: ApiEnum.POST,
-        endpoint: "https://{{data_domain}}/data/ TransactionOfAgent",
+        endpoint: "https://{{data_domain}}/data/TransactionOfAgent",
         description: "",
         parameter: [
           {
@@ -4602,7 +4602,7 @@ export const apiData = [
         title: "WinloseSummarize",
         id: "winlosesummarize",
         type: ApiEnum.POST,
-        endpoint: "https://{{data_domain}}/ WinloseSummarize/GetAll",
+        endpoint: "https://{{data_domain}}/WinloseSummarize/GetAll",
         description: "",
         parameter: [
           {
@@ -4796,7 +4796,7 @@ export const apiData = [
         title: "BettingHistory",
         id: "bettinghistory",
         type: ApiEnum.POST,
-        endpoint: "https://{{data_domain}}/Data/BettingHistory",
+        endpoint: "https://{{data_domain}}/data/BettingHistory",
         description: "",
         parameter: [
           {
