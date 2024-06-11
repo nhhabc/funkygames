@@ -34,7 +34,7 @@ const PopoverSelect = () => {
                   dispatch(clientAction.setCurrentProvider(provider))
                   onClose()
                 }}>
-                <Text px={"10px"}>{provider.name}</Text>
+                <Text px={"10px"}>{provider.name} API</Text>
                 {provider.img && <Image alt={provider.name} src={provider.img} h={"12px"}/>}
               </Flex>
             ))}
@@ -49,8 +49,8 @@ export default PopoverSelect
 
 const providers = [
   {
-    name: "AdvantPlay",
-    id: "advantplay",
+    name: "PragmaticPlay",
+    id: "pragmaticplay",
     img: ""
   },
   {
@@ -69,13 +69,8 @@ const providers = [
     img: ""
   },
   {
-    name: "JILI",
-    id: "jili",
-    img: ""
-  },
-  {
-    name: "Funky",
-    id: "funky",
+    name: "Red Tiger",
+    id: "red_tiger",
     img: ""
   },
   {
@@ -84,14 +79,23 @@ const providers = [
     img: ""
   },
   {
-    name: "PragmaticPlay",
-    id: "pragmaticplay",
+    name: "WM Live",
+    id: "wm_live",
     img: ""
   },
-  
   {
-    name: "Red Tiger",
-    id: "red_tiger",
+    name: "JILI",
+    id: "jili",
+    img: ""
+  },
+  {
+    name: "AdvantPlay",
+    id: "advantplay",
+    img: ""
+  },
+  {
+    name: "Funky",
+    id: "funky",
     img: ""
   },
   {
@@ -99,11 +103,7 @@ const providers = [
     id: "spade_gaming",
     img: ""
   },
-  {
-    name: "WM Live",
-    id: "wm_live",
-    img: ""
-  },
+ 
 ]
 
 const popoverButton = {

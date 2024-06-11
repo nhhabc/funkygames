@@ -245,241 +245,7 @@ export const data = [
 
 export const providerMenu = [
   {
-    name: "AdvantPlay",
-    id: "advantplay",
-    children: [
-      {
-        name: "Get Balance",
-        id: "get_balance_advantplay",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Place Bet",
-        id: "place_bet_advantplay",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Cancel Bet",
-        id: "cancel_bet_advantplay",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Settle Bet",
-        id: "settle_bet_advantplay",
-        type: ApiEnum.POST,
-      },
-    ]
-  },
-  {
-    name: "AWC",
-    id: "awc",
-    children: [
-      {
-        name: "Get Balance",
-        id: "get_balance_awc",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Place Bet",
-        id: "place_bet_awc",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Cancel Bet",
-        id: "cancel_bet_awc",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Settle Bet",
-        id: "settle_bet_awc",
-        type: ApiEnum.POST,
-      },
-    ]
-  },
-  {
-    name: "MIMI",
-    id: "mimi",
-    children: [
-      {
-        name: "Get Balance",
-        id: "get_balance_mimi",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Place Bet",
-        id: "place_bet_mimi",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Cancel Bet",
-        id: "cancel_bet_mimi",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Settle Bet",
-        id: "settle_bet_mimi",
-        type: ApiEnum.POST,
-      },
-    ]
-  },
-  {
-    name: "JILI",
-    id: "jili",
-    children: [
-      {
-        name: "Get Balance",
-        id: "get_balance_jili",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Place Bet",
-        id: "place_bet_jili",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Cancel Bet",
-        id: "cancel_bet_jili",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Settle Bet",
-        id: "settle_bet_jili",
-        type: ApiEnum.POST,
-      },
-    ]
-  },
-  {
-    name: "Red Tiger",
-    id: "red_tiger",
-    children: [
-      {
-        name: "Get Balance",
-        id: "get_balance_red_tiger",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Place Bet",
-        id: "place_bet_red_tiger",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Cancel Bet",
-        id: "cancel_bet_red_tiger",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Settle Bet",
-        id: "settle_bet_red_tiger",
-        type: ApiEnum.POST,
-      },
-    ]
-  },
-  {
-    name: "PGSoft",
-    id: "pgsoft",
-    children: [
-      {
-        name: "Get Balance",
-        id: "get_balance_pgsoft",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Place Bet",
-        id: "place_bet_pgsoft",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Cancel Bet",
-        id: "cancel_bet_pgsoft",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Settle Bet",
-        id: "settle_bet_pgsoft",
-        type: ApiEnum.POST,
-      },
-    ]
-  },
-  {
-    name: "WM Live",
-    id: "wm_live",
-    children: [
-      {
-        name: "Get Balance",
-        id: "get_balance_wm_live",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Place Bet",
-        id: "place_bet_wm_live",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Cancel Bet",
-        id: "cancel_bet_wm_live",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Settle Bet",
-        id: "settle_bet_wm_live",
-        type: ApiEnum.POST,
-      },
-    ]
-  },
-  {
-    name: "Funky",
-    id: "funky",
-    children: [
-      {
-        name: "Get Balance",
-        id: "get_balance_funky",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Place Bet",
-        id: "place_bet_funky",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Cancel Bet",
-        id: "cancel_bet_funky",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Settle Bet",
-        id: "settle_bet_funky",
-        type: ApiEnum.POST,
-      },
-    ]
-  },
-  {
-    name: "Spade Gaming",
-    id: "spade_gaming",
-    children: [
-      {
-        name: "Get Balance",
-        id: "get_balance_spade_gaming",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Place Bet",
-        id: "place_bet_spade_gaming",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Cancel Bet",
-        id: "cancel_bet_spade_gaming",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "Settle Bet",
-        id: "settle_bet_spade_gaming",
-        type: ApiEnum.POST,
-      },
-    ]
-  },
-  {
-    name: "PragmaticPlay",
+    name: "PragmaticPlay API",
     id: "pragmaticplay",
     children: [
       {
@@ -505,7 +271,33 @@ export const providerMenu = [
     ]
   },
   {
-    name: "Cookfight",
+    name: "AWC API",
+    id: "awc",
+    children: [
+      {
+        name: "Get Balance",
+        id: "get_balance_awc",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Place Bet",
+        id: "place_bet_awc",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Cancel Bet",
+        id: "cancel_bet_awc",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Settle Bet",
+        id: "settle_bet_awc",
+        type: ApiEnum.POST,
+      },
+    ]
+  },
+  {
+    name: "Cookfight API",
     id: "cookfight",
     children: [
       {
@@ -576,6 +368,214 @@ export const providerMenu = [
       {
         name: "ResendBetOrSettle",
         id: "resendbetorsettle_cookfight",
+        type: ApiEnum.POST,
+      },
+    ]
+  },
+  {
+    name: "MIMI API",
+    id: "mimi",
+    children: [
+      {
+        name: "Get Balance",
+        id: "get_balance_mimi",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Place Bet",
+        id: "place_bet_mimi",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Cancel Bet",
+        id: "cancel_bet_mimi",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Settle Bet",
+        id: "settle_bet_mimi",
+        type: ApiEnum.POST,
+      },
+    ]
+  },
+  {
+    name: "Red Tiger API",
+    id: "red_tiger",
+    children: [
+      {
+        name: "Get Balance",
+        id: "get_balance_red_tiger",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Place Bet",
+        id: "place_bet_red_tiger",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Cancel Bet",
+        id: "cancel_bet_red_tiger",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Settle Bet",
+        id: "settle_bet_red_tiger",
+        type: ApiEnum.POST,
+      },
+    ]
+  },
+  {
+    name: "PGSoft API",
+    id: "pgsoft",
+    children: [
+      {
+        name: "Get Balance",
+        id: "get_balance_pgsoft",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Place Bet",
+        id: "place_bet_pgsoft",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Cancel Bet",
+        id: "cancel_bet_pgsoft",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Settle Bet",
+        id: "settle_bet_pgsoft",
+        type: ApiEnum.POST,
+      },
+    ]
+  },
+  {
+    name: "WM Live API",
+    id: "wm_live",
+    children: [
+      {
+        name: "Get Balance",
+        id: "get_balance_wm_live",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Place Bet",
+        id: "place_bet_wm_live",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Cancel Bet",
+        id: "cancel_bet_wm_live",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Settle Bet",
+        id: "settle_bet_wm_live",
+        type: ApiEnum.POST,
+      },
+    ]
+  },
+  {
+    name: "Spade Gaming API",
+    id: "spade_gaming",
+    children: [
+      {
+        name: "Get Balance",
+        id: "get_balance_spade_gaming",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Place Bet",
+        id: "place_bet_spade_gaming",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Cancel Bet",
+        id: "cancel_bet_spade_gaming",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Settle Bet",
+        id: "settle_bet_spade_gaming",
+        type: ApiEnum.POST,
+      },
+    ]
+  },
+  {
+    name: "JILI API",
+    id: "jili",
+    children: [
+      {
+        name: "Get Balance",
+        id: "get_balance_jili",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Place Bet",
+        id: "place_bet_jili",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Cancel Bet",
+        id: "cancel_bet_jili",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Settle Bet",
+        id: "settle_bet_jili",
+        type: ApiEnum.POST,
+      },
+    ]
+  },
+  {
+    name: "AdvantPlay API",
+    id: "advantplay",
+    children: [
+      {
+        name: "Get Balance",
+        id: "get_balance_advantplay",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Place Bet",
+        id: "place_bet_advantplay",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Cancel Bet",
+        id: "cancel_bet_advantplay",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Settle Bet",
+        id: "settle_bet_advantplay",
+        type: ApiEnum.POST,
+      },
+    ]
+  },
+  {
+    name: "Funky API",
+    id: "funky",
+    children: [
+      {
+        name: "Get Balance",
+        id: "get_balance_funky",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Place Bet",
+        id: "place_bet_funky",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Cancel Bet",
+        id: "cancel_bet_funky",
+        type: ApiEnum.POST,
+      },
+      {
+        name: "Settle Bet",
+        id: "settle_bet_funky",
         type: ApiEnum.POST,
       },
     ]
