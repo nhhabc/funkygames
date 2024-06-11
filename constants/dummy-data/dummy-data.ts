@@ -6236,7 +6236,7 @@ export const apiProvider = [
                     name: "data",
                     type: "object",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -6470,7 +6470,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -6734,7 +6734,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -7054,7 +7054,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -7242,7 +7242,7 @@ export const apiProvider = [
                     name: "data",
                     type: "object",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -7476,7 +7476,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -7740,7 +7740,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -8060,7 +8060,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -8248,7 +8248,7 @@ export const apiProvider = [
                     name: "data",
                     type: "object",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -8482,7 +8482,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -8746,7 +8746,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -9066,7 +9066,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -9254,7 +9254,7 @@ export const apiProvider = [
                     name: "data",
                     type: "object",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -9488,7 +9488,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -9752,7 +9752,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -10072,7 +10072,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -10260,7 +10260,7 @@ export const apiProvider = [
                     name: "data",
                     type: "object",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -10494,7 +10494,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -10758,7 +10758,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -11078,7 +11078,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -11266,7 +11266,7 @@ export const apiProvider = [
                     name: "data",
                     type: "object",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -11500,7 +11500,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -11764,7 +11764,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -12084,7 +12084,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -12272,7 +12272,7 @@ export const apiProvider = [
                     name: "data",
                     type: "object",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -12506,7 +12506,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -12770,7 +12770,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -13090,7 +13090,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -13278,7 +13278,7 @@ export const apiProvider = [
                     name: "data",
                     type: "object",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -13512,7 +13512,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -13776,7 +13776,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -14096,7 +14096,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -14284,7 +14284,7 @@ export const apiProvider = [
                     name: "data",
                     type: "object",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -14518,7 +14518,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -14782,7 +14782,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -15102,7 +15102,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -15290,7 +15290,7 @@ export const apiProvider = [
                     name: "data",
                     type: "object",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -15524,7 +15524,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -15788,7 +15788,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -16108,7 +16108,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -16296,7 +16296,7 @@ export const apiProvider = [
                     name: "data",
                     type: "object",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -16530,7 +16530,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -16794,7 +16794,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -17114,7 +17114,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -17302,7 +17302,7 @@ export const apiProvider = [
                     name: "data",
                     type: "object",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -17536,7 +17536,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -17800,7 +17800,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
@@ -18120,7 +18120,7 @@ export const apiProvider = [
                     name: "balance",
                     type: "string",
                     required: false,
-                    description: "10000.23",
+                    description: "",
                     restriction: [],
                     schema: []
                   }
