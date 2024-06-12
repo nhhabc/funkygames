@@ -3,7 +3,7 @@ import React from 'react'
 
 const NoteSectionLayout = () => {
   return (
-    <Box bg={"rgb(38, 50, 56)"} pos={"absolute"} top={0} bottom={0} right={0} w={"calc(40% - 104px)"} h={"100%"}/>
+    <Box bg={"rgb(38, 50, 56)"} display={["none","none","none","block"]} pos={"absolute"} top={0} bottom={0} right={0} w={"calc(40% - 104px)"} h={"100%"}/>
   )
 }
 

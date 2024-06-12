@@ -28,7 +28,7 @@ const ApiContainer = ({data, ...props}: TApiContainerProps) => {
       {data.api.map((api, i) => (
         <ViewDetect threshold={0.4} id={api.id} key={i}>
           <div className={styles.section}>
-            <Flex>
+            <Flex flexDir={['column', 'column','row','row']}>
               <div className={styles.inside_section}>
                 <Box mb={"20px"}>
                   <h2>{api.title}</h2>

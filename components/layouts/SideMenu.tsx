@@ -29,15 +29,15 @@ const SideMenu = () => {
   }, [currentContentSection])
 
   return (
-    <Flex flexDir={"column"} pos={"sticky"} w={"260px"} top={"0px"} h={"calc(0px + 100vh)"} bgColor={"rgb(250, 250, 250)"}>
+    <Flex flexDir={"column"} pos={"sticky"} w={[0,260,260] } top={"0px"} h={"calc(0px + 100vh)"} bgColor={"rgb(250, 250, 250)"}>
       <Center>
         <Image alt='' src='/images/logoMiMi.png'
-          mt ={"10px"} 
+          m={"10px"}
           h={"100px"}
           objectFit={"cover"}
           p={"2px"}/>
       </Center>
-      <Box py={"5px"} pos={'relative'}>
+      {/* <Box py={"5px"} pos={'relative'}>
         <Box position="absolute"
             left="20px"
             top={"50%"}
@@ -46,8 +46,8 @@ const SideMenu = () => {
             width="0.9em"
             height="1.8em"/>
         </Box>
-        <input className={styles.search_input} placeholder='Search...'/>
-      </Box>
+          <input className={styles.search_input} placeholder='Search...'/>
+      </Box> */}
       <Accordion overflow={'hidden'} allowToggle onChange={(i) => setCurrentMenuIndex(i)}
         index={currentMenuIndex}>
         <ul className={styles.menu_list}>
