@@ -31,11 +31,8 @@ const SideMenu = () => {
   return (
     <Flex flexDir={"column"} pos={"sticky"} w={[0,260,260] } top={"0px"} h={"calc(0px + 100vh)"} bgColor={"rgb(250, 250, 250)"}>
       <Center>
-        <Image alt='' src='/images/logoMiMi.png'
-          m={"10px"}
-          h={"100px"}
-          objectFit={"cover"}
-          p={"2px"}/>
+        <Image  className={styles.logo} alt='' src='/images/logoMiMi.png'
+          objectFit={"cover"}/>
       </Center>
       {/* <Box py={"5px"} pos={'relative'}>
         <Box position="absolute"

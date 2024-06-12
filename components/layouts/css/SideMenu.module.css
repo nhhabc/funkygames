@@ -12,6 +12,20 @@
   color: rgb(51, 51, 51);
 }
 
+.logo {
+  margin: 10px;
+  height: 100px;
+  padding: 2px;
+}
+
+@media only screen and (max-width: 150px) {
+  .logo {
+    margin: 10px;
+    height: 75px;
+    padding: 2px;
+  }
+}
+
 .menu_list {
   padding-bottom: 80px;
   height: calc(100vh - 100px);
@@ -40,3 +54,4 @@
   color: rgb(50, 50, 159);
   background: rgb(225, 225, 225);
 }
+
