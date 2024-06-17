@@ -7,10 +7,11 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 
 type TMenuAccordion = ChakraProps & {
-  data: {name: string, id: string, children: {name: string, id: string, type: ApiEnum}[]}
+  data: {name: string, id: string, children: {name: string, id: string, type: ApiEnum}[]},
+  onClick?: () => void,
 }
 
-const MenuAccordion = ({data, ...props}: TMenuAccordion) => {
+const MenuAccordion = ({data, onClick, ...props}: TMenuAccordion) => {
   const {currentContentSection} = useSelector((state: RootState) => state.client)
 
   return (
@@ -31,7 +32,10 @@ const MenuAccordion = ({data, ...props}: TMenuAccordion) => {
               <Flex sx={menuItem} justifyContent={"flex-start"} key={i}
                 color={currentContentSection === child.id ? "rgb(50, 50, 159)" : "rgb(51, 51, 51)"} 
                 bgColor={currentContentSection === child.id ? "rgb(225, 225, 225)" : "rgb(250, 250, 250)"}
-                onClick={() => handleScrollToElement(child.id)}>
+                onClick={() => {
+                  handleScrollToElement(child.id)
+                  onClick && onClick()
+                }}>
                 {child.type ? <ApiBrand type={child.type} fromMenu={true}/> : <Box w={"15px"}/>}
                 {child.name}
               </Flex>

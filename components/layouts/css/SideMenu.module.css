@@ -55,3 +55,31 @@
   background: rgb(225, 225, 225);
 }
 
+.menu_button {
+  outline: none;
+  user-select: none;
+  background-color: rgb(242, 242, 242);
+  color: rgb(50, 50, 159);
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  z-index: 100;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px;
+  bottom: 44px;
+  width: 60px;
+  height: 60px;
+  padding: 0px 20px;
+}
+
+.menu_button_inside {
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  color: rgb(50, 50, 159);
+}
+
