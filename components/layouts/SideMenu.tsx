@@ -80,7 +80,8 @@ const SideMenu = () => {
                 })}
             <PopoverSelect/>
             {providerMenu.map((item, i) => (
-              <MenuAccordion data={item} key={i} display={item.id === currentProvider.id ? "block" : "none"}/>
+              <MenuAccordion data={item} key={i} onClick={() => disableMenuOpen()} 
+                display={item.id === currentProvider.id ? "block" : "none"}/>
             ))}
           </ul>
         </Accordion>
