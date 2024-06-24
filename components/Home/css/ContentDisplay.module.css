@@ -243,6 +243,7 @@
 }
 
 .button_container {
+  
   opacity: 0.7;
   transition: opacity 0.3s ease 0s;
   text-align: right;
