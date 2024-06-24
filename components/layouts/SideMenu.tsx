@@ -22,7 +22,6 @@ const SideMenu = () => {
   const dispatch = useDispatch()
   
   const disableMenuOpen = () => {
-    dispatch(clientAction.setCurrentProvider(""))
     setIsShowMenu(false)
   }
   
@@ -71,6 +70,7 @@ const SideMenu = () => {
                   bgColor={currentContentSection === item.id ? "rgb(225, 225, 225)" : "rgb(250, 250, 250)"}
                   onClick={() => {
                     handleScrollToElement(item.id)
+                    dispatch(clientAction.setCurrentProvider(""))
                     item.children.length === 0 && disableMenuOpen()
                   }}
                   >
@@ -81,7 +81,9 @@ const SideMenu = () => {
 
               return (<MenuAccordion data={item} key={i} 
                   onClick={() => disableMenuOpen()} 
-                  onParentClick={() => disableMenuOpen()}/>)
+                  onParentClick={() => {
+                    dispatch(clientAction.setCurrentProvider(""))
+                  }}/>)
                 })}
             <PopoverSelect/>
             {providerMenu.map((item, i) => (
