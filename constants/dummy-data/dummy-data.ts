@@ -754,7 +754,7 @@ export const apiData = [
         id: "createPlayer",
         type: ApiEnum.POST,
         endpoint: "https://{{api_domain}}/account/createplayer",
-        description: "This function is for registering a new player account in middleware system.\n Every player is binded to an agent.\n The hierarchy is => Agent -> Player. \nThe new player's default TableLimit is following with player's agent settings.",
+        description: "This function is for registering a new player account in middleware system. Every player is binded to an agent. The hierarchy is => Agent -> Player. The new player's default TableLimit is following with player's agent settings.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
@@ -905,7 +905,7 @@ export const apiData = [
         id: "login",
         type: ApiEnum.POST,
         endpoint: "https://{{api_domain}}/account/login",
-        description: "Login function is used to get a login token for player who logins to middleware system.\n The token is binded to this login session and it will be expired in 30 minutes.\n To obtain new token before it gets expired, consider using RefreshToken function or Login function again.\n Player is required to carry this token to visit our website for authentication.",
+        description: "Login function is used to get a login token for player who logins to middleware system. The token is binded to this login session and it will be expired in 30 minutes. To obtain new token before it gets expired, consider using RefreshToken function or Login function again. Player is required to carry this token to visit our website for authentication.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
@@ -1054,7 +1054,7 @@ export const apiData = [
         id: "refreshToken",
         type: ApiEnum.POST,
         endpoint: "https://{{api_domain}}/account/refreshtoken",
-        description: "This function is used to get a new token for players who have already got authentication token earlier.\n This function will invalidate the old token as well.",
+        description: "This function is used to get a new token for players who have already got authentication token earlier. This function will invalidate the old token as well.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
@@ -2121,7 +2121,7 @@ export const apiData = [
         id: "update_betlimitid_for_sexy",
         type: ApiEnum.POST,
         endpoint: "https://{{api_domain}}/player/update-bet-limit-ids",
-        description: "Update betlimitids for existing players.\n Applied for Sexy Baccarat.\n Please refer to the attached excel to know more about the available ID to send.",
+        description: "Update betlimitids for existing players. Applied for Sexy Baccarat. Please refer to the attached excel to know more about the available ID to send.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
@@ -2244,7 +2244,7 @@ export const apiData = [
         id: "get_pending_rounds_in_pragmatic_play_(optional)",
         type: ApiEnum.GET,
         endpoint: "https://{{api_domain}}/player/get-pending-pp-rounds",
-        description: "Sometimes when player purchase freespin of some slot game of Pragmatic Play, the round will be in the “pending” state until the player spin all the freespin.\n This API will return all those pending rounds.",
+        description: "Sometimes when player purchase freespin of some slot game of Pragmatic Play, the round will be in the “pending” state until the player spin all the freespin. This API will return all those pending rounds.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
@@ -3663,7 +3663,7 @@ export const apiData = [
         id: "bet_list_paginated",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/data/BetListPaginated",
-        description: "Like the BetListBy function but add more field in the response: `Count`.\n This will let client paginate data.",
+        description: "Like the BetListBy function but add more field in the response: `Count`. This will let client paginate data.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
@@ -4219,7 +4219,7 @@ export const apiData = [
         id: "betlistdetailsv3",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/data/BetListDetailsV3",
-        description: "Like the BetListDetails (3.13) function but the input is different.\n This version will require Agent Name, API Key and Playername, instead of Authorization token.",
+        description: "Like the BetListDetails (3.13) function but the input is different. This version will require Agent Name, API Key and Playername, instead of Authorization token.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
@@ -5210,7 +5210,7 @@ export const apiData = [
         id: "winloseallv2",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/data/winloseallv2",
-        description: "Get list of winlose summary data from all players in specified provider.\n So, this function doesn’t require authorization token as above functions.\n But it requires ApiKey and AgentName instead.",
+        description: "Get list of winlose summary data from all players in specified provider. So, this function doesn’t require authorization token as above functions. But it requires ApiKey and AgentName instead.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
@@ -5426,7 +5426,7 @@ export const apiData = [
         id: "list_available_game",
         type: ApiEnum.GET,
         endpoint: "https://{{data_domain}}/data/games",
-        description: "Get list of winlose summary data from all players in specified provider. \n So, this function doesn’t require authorization token as above functions.\n But it requires ApiKey and AgentName instead.",
+        description: "Get list of winlose summary data from all players in specified provider. So, this function doesn’t require authorization token as above functions. But it requires ApiKey and AgentName instead.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
@@ -5928,7 +5928,7 @@ export const apiData = [
         id: "betlistdetailsv2",
         type: ApiEnum.POST,
         endpoint: "https://{{api_domain}}/data/BetListDetailsV2",
-        description: "Like the BetListDetails (3.13) function but the input is different.\n This version will require Agent Name, API Key and Playername, instead of Authorization token.",
+        description: "Like the BetListDetails (3.13) function but the input is different. This version will require Agent Name, API Key and Playername, instead of Authorization token.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
