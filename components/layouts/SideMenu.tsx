@@ -3,13 +3,14 @@ import { Accordion, Box, Center, Flex, Image, Text } from '@chakra-ui/react'
 import React, { useEffect, useRef, useState } from 'react'
 import styles from "./css/SideMenu.module.css"
 import { data, providerMenu } from '@/constants/dummy-data/dummy-data'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '@/configurations/redux/store'
 import PopoverSelect from './side-menu/PopoverSelect'
 import { handleScrollToElement } from '@/helpers/HandleScrollToElement'
 import MenuAccordion from './side-menu/MenuAccordion'
 import MenuUpIco from "@/public/svg/menu_up.svg"
 import MenuDownIco from "@/public/svg/menu_down.svg"
+import { clientAction } from '@/configurations/redux/client-slice'
 
 const numberDataPreview = data.filter(item => item.children.length === 0).length
 
@@ -18,8 +19,10 @@ const SideMenu = () => {
   const [currentMenuIndex, setCurrentMenuIndex] = useState<number|number[]>(-1)
   const [isShowMenu, setIsShowMenu] = useState(false)
   const menuRef = useRef(null)
+  const dispatch = useDispatch()
   
   const disableMenuOpen = () => {
+    dispatch(clientAction.setCurrentProvider(""))
     setIsShowMenu(false)
   }
   
@@ -76,7 +79,9 @@ const SideMenu = () => {
                   </Text>
                 </Flex>)
 
-              return (<MenuAccordion data={item} key={i} onClick={() => disableMenuOpen()}/>)
+              return (<MenuAccordion data={item} key={i} 
+                  onClick={() => disableMenuOpen()} 
+                  onParentClick={() => disableMenuOpen()}/>)
                 })}
             <PopoverSelect/>
             {providerMenu.map((item, i) => (
@@ -86,7 +91,8 @@ const SideMenu = () => {
           </ul>
         </Accordion>
       </Flex>
-      <Flex className={styles.menu_button} onClick={() => setIsShowMenu(!isShowMenu)}>
+      <Flex className={styles.menu_button} onClick={() => setIsShowMenu(!isShowMenu)} 
+        display={["flex","flex","none","none"]}>
         <Center className={styles.menu_button_inside}>
           <Box transform={isShowMenu ? "translate(-2px, 15px)" : "translate(-2px, 0px)"} transition={"0.2s"}>
             <MenuUpIco/>

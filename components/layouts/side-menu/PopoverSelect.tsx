@@ -1,4 +1,5 @@
 import { clientAction } from '@/configurations/redux/client-slice'
+import { handleScrollToElement } from '@/helpers/HandleScrollToElement'
 import { useOutsideClick } from '@/hooks/useOutsideHandler'
 import { ChevronDownIcon } from '@chakra-ui/icons'
 import { Button, Flex, Image, Popover, PopoverContent, PopoverTrigger, Text } from '@chakra-ui/react'
@@ -30,8 +31,9 @@ const PopoverSelect = () => {
               <Flex key={i} borderBottom={"1px solid #e5e5e5"} alignItems={'center'} px={"10px"} transition={".2s"} 
                 cursor={'pointer'}
                 _hover={{ bgColor: "#eee" }}
-                onClick={() => {
-                  dispatch(clientAction.setCurrentProvider(provider))
+                onClick={async () => {
+                  await dispatch(clientAction.setCurrentProvider(provider))
+                  handleScrollToElement(provider.id)
                   onClose()
                 }}>
                 <Text px={"10px"}>{provider.name}</Text>
