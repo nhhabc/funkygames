@@ -40,7 +40,7 @@ const ApiContainer = ({data, ...props}: TApiContainerProps) => {
                   </button>
                 </Box>
                 <Box mb={"30px"} mt={"10px"}>
-                  <p >{api.description}</p>
+                  <Text className={styles.descriptionText} >{api.description}</Text>
                 </Box>
                 {api.parameter.map((item, i) => (
                   <ParamsTable key={i} data={item}/>

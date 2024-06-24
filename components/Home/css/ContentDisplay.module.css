@@ -270,3 +270,7 @@
   contain: content;
   overflow-x: auto;
 }
+
+.descriptionText{
+  white-space: pre-line;
+}

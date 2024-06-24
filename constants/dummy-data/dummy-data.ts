@@ -6575,7 +6575,7 @@ export const apiProvider = [
         id: "cancel_bet_mimi",
         type: ApiEnum.POST,
         endpoint: "",
-        description: "Sending bet information to single wallet site.\n 1: When place bet has failure will call 'Cancel Bet'.\n 2: When cancel bet is unsuccessful will schedule a job to repeat it until success.",
+        description: "Sending bet information to single wallet site.\n 1. When place bet has failure will call 'Cancel Bet'.\n 2. When cancel bet is unsuccessful will schedule a job to repeat it until success.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
@@ -7581,7 +7581,7 @@ export const apiProvider = [
         id: "cancel_bet_pgsoft",
         type: ApiEnum.POST,
         endpoint: "",
-        description: "Sending bet information to single wallet site.\n 1: When place bet has failure will call 'Cancel Bet'.\n 2: When cancel bet is unsuccessful will schedule a job to repeat it until success.",
+        description: "Sending bet information to single wallet site.\n 1. When place bet has failure will call 'Cancel Bet'.\n 2. When cancel bet is unsuccessful will schedule a job to repeat it until success.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
@@ -8587,7 +8587,7 @@ export const apiProvider = [
         id: "cancel_bet_evoplay",
         type: ApiEnum.POST,
         endpoint: "",
-        description: "Sending bet information to single wallet site.\n 1: When place bet has failure will call 'Cancel Bet'.\n 2: When cancel bet is unsuccessful will schedule a job to repeat it until success.",
+        description: "Sending bet information to single wallet site.\n 1. When place bet has failure will call 'Cancel Bet'.\n 2. When cancel bet is unsuccessful will schedule a job to repeat it until success.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
@@ -9593,7 +9593,7 @@ export const apiProvider = [
         id: "cancel_bet_jili",
         type: ApiEnum.POST,
         endpoint: "",
-        description: "Sending bet information to single wallet site.\n 1: When place bet has failure will call 'Cancel Bet'.\n 2: When cancel bet is unsuccessful will schedule a job to repeat it until success.",
+        description: "Sending bet information to single wallet site.\n 1. When place bet has failure will call 'Cancel Bet'.\n 2. When cancel bet is unsuccessful will schedule a job to repeat it until success.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
@@ -10599,7 +10599,7 @@ export const apiProvider = [
         id: "cancel_bet_red_tiger",
         type: ApiEnum.POST,
         endpoint: "",
-        description: "Sending bet information to single wallet site.\n 1: When place bet has failure will call 'Cancel Bet'.\n 2: When cancel bet is unsuccessful will schedule a job to repeat it until success.",
+        description: "Sending bet information to single wallet site.\n 1. When place bet has failure will call 'Cancel Bet'.\n 2. When cancel bet is unsuccessful will schedule a job to repeat it until success.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
@@ -11605,7 +11605,7 @@ export const apiProvider = [
         id: "cancel_bet_spade_gaming",
         type: ApiEnum.POST,
         endpoint: "",
-        description: "Sending bet information to single wallet site.\n 1: When place bet has failure will call 'Cancel Bet'.\n 2: When cancel bet is unsuccessful will schedule a job to repeat it until success.",
+        description: "Sending bet information to single wallet site.\n 1. When place bet has failure will call 'Cancel Bet'.\n 2. When cancel bet is unsuccessful will schedule a job to repeat it until success.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
@@ -12611,7 +12611,7 @@ export const apiProvider = [
         id: "cancel_bet_wm_live",
         type: ApiEnum.POST,
         endpoint: "",
-        description: "Sending bet information to single wallet site.\n 1: When place bet has failure will call 'Cancel Bet'.\n 2: When cancel bet is unsuccessful will schedule a job to repeat it until success.",
+        description: "Sending bet information to single wallet site.\n 1. When place bet has failure will call 'Cancel Bet'.\n 2. When cancel bet is unsuccessful will schedule a job to repeat it until success.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
@@ -13617,7 +13617,7 @@ export const apiProvider = [
         id: "cancel_bet_awc",
         type: ApiEnum.POST,
         endpoint: "",
-        description: "Sending bet information to single wallet site.\n 1: When place bet has failure will call 'Cancel Bet'.\n 2: When cancel bet is unsuccessful will schedule a job to repeat it until success.",
+        description: "Sending bet information to single wallet site.\n 1. When place bet has failure will call 'Cancel Bet'.\n 2. When cancel bet is unsuccessful will schedule a job to repeat it until success.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
@@ -14623,7 +14623,7 @@ export const apiProvider = [
         id: "cancel_bet_advantplay",
         type: ApiEnum.POST,
         endpoint: "",
-        description: "Sending bet information to single wallet site.\n 1: When place bet has failure will call 'Cancel Bet'.\n 2: When cancel bet is unsuccessful will schedule a job to repeat it until success.",
+        description: "Sending bet information to single wallet site.\n 1. When place bet has failure will call 'Cancel Bet'.\n 2. When cancel bet is unsuccessful will schedule a job to repeat it until success.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
@@ -15629,7 +15629,7 @@ export const apiProvider = [
         id: "cancel_bet_funky",
         type: ApiEnum.POST,
         endpoint: "",
-        description: "Sending bet information to single wallet site.\n 1: When place bet has failure will call 'Cancel Bet'.\n 2: When cancel bet is unsuccessful will schedule a job to repeat it until success.",
+        description: "Sending bet information to single wallet site.\n 1. When place bet has failure will call 'Cancel Bet'.\n 2. When cancel bet is unsuccessful will schedule a job to repeat it until success.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
@@ -16635,7 +16635,7 @@ export const apiProvider = [
         id: "cancel_bet_pragmaticplay",
         type: ApiEnum.POST,
         endpoint: "",
-        description: "Sending bet information to single wallet site.\n 1: When place bet has failure will call 'Cancel Bet'.\n 2: When cancel bet is unsuccessful will schedule a job to repeat it until success.",
+        description: "Sending bet information to single wallet site.\n 1. When place bet has failure will call 'Cancel Bet'.\n 2. When cancel bet is unsuccessful will schedule a job to repeat it until success.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
@@ -17641,7 +17641,7 @@ export const apiProvider = [
         id: "cancel_bet_cookfight",
         type: ApiEnum.POST,
         endpoint: "",
-        description: "Sending bet information to single wallet site.\n 1: When place bet has failure will call 'Cancel Bet'.\n 2: When cancel bet is unsuccessful will schedule a job to repeat it until success.",
+        description: "Sending bet information to single wallet site.\n 1. When place bet has failure will call 'Cancel Bet'.\n 2. When cancel bet is unsuccessful will schedule a job to repeat it until success.",
         parameter: [
           {
             name: "REQUEST BODY SCHEMA",
