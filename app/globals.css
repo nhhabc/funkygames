@@ -90,7 +90,7 @@ tr:nth-child(even) {
 }
 
 h1 {
-  font-family: Montserrat, sans-serif;
+  font-family: Roboto;
   font-weight: 400;
   font-size: 1.85714em;
   line-height: 1.6em;
@@ -99,7 +99,7 @@ h1 {
 }
 
 h2 {
-  font-family: Montserrat, sans-serif;
+  font-family: Roboto;
   font-weight: 400;
   font-size: 1.57143em;
   line-height: 1.6em;
@@ -125,7 +125,7 @@ h5 {
   color: rgba(38, 50, 56, 0.5);
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 0.929em;
+  font-size: 0.97em;
   line-height: 20px;
 }
 

@@ -20,7 +20,7 @@ const PopoverSelect = () => {
           <PopoverTrigger>
             <Button sx={popoverButton}>
               <Flex minW={"100%"} borderRadius={"10px"} alignItems={'center'} justifyContent={'space-between'}>
-                <Text fontWeight={400} fontSize={"14px"}>Seamless API</Text>
+                <Text margin={"2px"} fontWeight={400} fontSize={"14px"}>Seamless API</Text>
                 <ChevronDownIcon/>    
               </Flex>
             </Button>
@@ -28,7 +28,7 @@ const PopoverSelect = () => {
           <PopoverContent py={"5px"} _focusVisible={{ outline: "none" }} overflow={"auto"} maxW={"260px"}
             ref={popoverRef}>
             {providers.map((provider, i) => (
-              <Flex key={i} borderBottom={"1px solid #e5e5e5"} alignItems={'center'} px={"10px"} transition={".2s"} 
+              <Flex key={i} borderBottom={"1px solid #e5e5e5"} margin={"5px"} alignItems={'center'} px={"10px"} transition={".2s"} 
                 cursor={'pointer'}
                 _hover={{ bgColor: "#eee" }}
                 onClick={async () => {
@@ -68,7 +68,7 @@ const providers = [
   {
     name: "MIMI",
     id: "mimi",
-    img: ""
+    img: "/images/MimiLogo.png"
   },
   {
     name: "Red Tiger",
@@ -88,7 +88,7 @@ const providers = [
   {
     name: "JILI",
     id: "jili",
-    img: ""
+    img: "/images/Logo-Jili.png"
   },
   {
     name: "AdvantPlay",

@@ -45,9 +45,9 @@
   transition: all .2s;
   padding: 12.5px 20px;
   justify-content: space-between;
-  font-size: 0.929em;
+  font-size: 0.97em;
   text-transform: none;
-  font-family: Montserrat, sans-serif;
+  font-family: Roboto;
 }
 
 .side_menu_item:hover {

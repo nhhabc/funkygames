@@ -7,7 +7,7 @@ type THeadingText = HeadingProps & {
 
 const HeadingText = ({children, ...props}: THeadingText) => {
   return (
-    <Heading as={"h1"} fontFamily={"Montserrat, sans-serif"} fontWeight={400} fontSize={"1.85714em"}
+    <Heading as={"h1"} fontFamily={"Roboto"} fontWeight={400} fontSize={"1.85714em"}
       lineHeight={"1.6em"} color={"rgb(51, 51, 51)"}
       {...props}>
       {children}

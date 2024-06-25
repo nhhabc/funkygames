@@ -169,7 +169,7 @@
 .note {
   margin-left: 10px;
   text-transform: none;
-  font-size: 0.929em;
+  font-size: 0.97em;
   color: black;
 }
 
@@ -222,7 +222,7 @@
 }
 
 .content_type_text {
-  font-family: Montserrat, sans-serif;
+  font-family: Roboto;
   font-size: 12px;
   position: absolute;
   z-index: 1;
@@ -237,8 +237,8 @@
   background-color: rgba(38, 50, 56, 0.4);
   margin: 0px 0px 10px;
   display: block;
-  font-family: Montserrat, sans-serif;
-  font-size: 0.929em;
+  font-family: Roboto;
+  font-size: 0.97em;
   line-height: 1.5em;
 }
 

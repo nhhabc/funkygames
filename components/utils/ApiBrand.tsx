@@ -51,11 +51,11 @@ const menuBrand = {
 }
 
 const normalBrand = {
-  fontSize:"0.929em",
+  fontSize:"0.97em",
   lineHeight:"20px",
   color:"#fff",
   p:"3px 10px",
   textTransform:"uppercase",
-  fontFamily:"Montserrat, sans-serif",
+  fontFamily:"Roboto",
   m:"0px",
 }
