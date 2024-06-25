@@ -53,15 +53,15 @@ const providers = [
   {
     name: "PragmaticPlay",
     id: "pragmaticplay",
-    img: ""
+    img: "/images/PP-logo.png"
   },
   {
     name: "AWC",
     id: "awc",
-    img: ""
+    img: "/images/awc.png"
   },
   {
-    name: "Cookfight",
+    name: "Cockfight",
     id: "cookfight",
     img: ""
   },
@@ -73,12 +73,12 @@ const providers = [
   {
     name: "Red Tiger",
     id: "red_tiger",
-    img: ""
+    img: "/images/REDTIGER-logo.png"
   },
   {
     name: "PGSoft",
     id: "pgsoft",
-    img: ""
+    img: "/images/POCKET-logo.png"
   },
   {
     name: "WM Live",
@@ -93,17 +93,17 @@ const providers = [
   {
     name: "AdvantPlay",
     id: "advantplay",
-    img: ""
+    img: "/images/advantPlay.png"
   },
   {
     name: "Funky",
     id: "funky",
-    img: ""
+    img: "/images/funky.png"
   },
   {
     name: "Spade Gaming",
     id: "spade_gaming",
-    img: ""
+    img: "/images/spade-games.png"
   },
  
 ]
