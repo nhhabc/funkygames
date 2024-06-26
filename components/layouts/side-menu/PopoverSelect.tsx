@@ -108,19 +108,19 @@ const providers = [
  
 ]
 
-const popoverButton = {
-  w: "100%",
-  color:"#344050",
-  boxShadow:"inset 0 1px 2px rgba(0, 0, 0, 0.075)",
-  lineHeight:1.5,
-  _focusVisible: {
-    outline: "none"
-  },
-  _hover: {
-    color: "rgb(50, 50, 159)",
-    bgColor: "rgb(225, 225, 225)"
-  }
-}
+// const popoverButton = {
+//   w: "100%",
+//   color:"#344050",
+//   boxShadow:"inset 0 1px 2px rgba(0, 0, 0, 0.075)",
+//   lineHeight:1.5,
+//   _focusVisible: {
+//     outline: "none"
+//   },
+//   _hover: {
+//     color: "rgb(50, 50, 159)",
+//     bgColor: "rgb(225, 225, 225)"
+//   }
+// }
 
 const menuItem = {
   display:"flex",
