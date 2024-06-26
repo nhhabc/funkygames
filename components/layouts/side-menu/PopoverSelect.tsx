@@ -63,7 +63,7 @@ const providers = [
   {
     name: "Cockfight",
     id: "cookfight",
-    img: ""
+    img: "/images/sv388cockfight.png"
   },
   {
     name: "MIMI",
@@ -83,7 +83,7 @@ const providers = [
   {
     name: "WM Live",
     id: "wm_live",
-    img: ""
+    img: "/images/wm.png"
   },
   {
     name: "JILI",
