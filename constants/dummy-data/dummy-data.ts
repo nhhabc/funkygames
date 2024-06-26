@@ -20735,6 +20735,8 @@ export const language = [
   {value: "zh-tw",	description: (["Traditional Chinese"])},
   {value: "zh-cn",	description: (["Simplified Chinese"])},
   {value: "th-th",	description: (["Thai"])},
+  {value: "id-id",	description: (["Indonesia"])},
+  {value: "vi-vn",	description: (["Viet Nam"])},
 ]
 
 export const timezone = [
