@@ -2,7 +2,7 @@ import ApiBrand from '@/components/utils/ApiBrand'
 import { RootState } from '@/configurations/redux/store'
 import { ApiEnum } from '@/constants/enum'
 import { handleScrollToElement } from '@/helpers/HandleScrollToElement'
-import { AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, ChakraProps, Flex, Text } from '@chakra-ui/react'
+import { AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Center, ChakraProps, Flex, Image, Text } from '@chakra-ui/react'
 import React, { ReactNode } from 'react'
 import { useSelector } from 'react-redux'
 
@@ -14,7 +14,9 @@ type TMenuAccordion = ChakraProps & {
 }
 
 const MenuAccordion = ({data, onClick, onParentClick, children, ...props}: TMenuAccordion) => {
-  const {currentContentSection} = useSelector((state: RootState) => state.client)
+  const {currentContentSection, currentProvider} = useSelector((state: RootState) => state.client)
+
+  console.log(currentProvider);
 
   return (
     <AccordionItem border={"0px solid #fff"} {...props}>
@@ -27,12 +29,14 @@ const MenuAccordion = ({data, onClick, onParentClick, children, ...props}: TMenu
           onParentClick && onParentClick()
         }}
         >
-        <Flex>
+        <Center>
           {children}
           <Text w={"auto"} verticalAlign={"middle"} overflow={"hidden"} textOverflow={"ellipsis"}>
             {data.name}
           </Text>
-        </Flex>
+          {currentProvider?.img && currentProvider.id === data.id && 
+            <Image pl={"10px"} alt='provider' src={currentProvider?.img} w={"60px"} h={"30px"} objectFit={"contain"}/>}
+        </Center>
         {data.children.length > 0 && <AccordionIcon />}
           </AccordionButton>
           {data.children.length > 0 && <AccordionPanel padding={0}>
@@ -44,6 +48,7 @@ const MenuAccordion = ({data, onClick, onParentClick, children, ...props}: TMenu
                   handleScrollToElement(child.id)
                   onClick && onClick()
                 }}>
+                {children}
                 {child.type ? <ApiBrand type={child.type} fromMenu={true}/> : <Box w={"15px"}/>}
                 {child.name}
               </Flex>

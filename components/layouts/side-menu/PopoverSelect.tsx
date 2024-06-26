@@ -1,14 +1,12 @@
 import { clientAction } from '@/configurations/redux/client-slice'
-import { RootState } from '@/configurations/redux/store'
 import { handleScrollToElement } from '@/helpers/HandleScrollToElement'
 import { useOutsideClick } from '@/hooks/useOutsideHandler'
 import { ChevronDownIcon } from '@chakra-ui/icons'
-import { Button, Flex, Image, Popover, PopoverContent, PopoverTrigger, Text } from '@chakra-ui/react'
+import { Flex, Image, Popover, PopoverContent, PopoverTrigger, Text } from '@chakra-ui/react'
 import React, { useRef } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 
 const PopoverSelect = () => {
-  const {currentContentSection} = useSelector((state: RootState) => state.client)
   const popoverRef = useRef<any>(null)
   const dispatch = useDispatch()
 

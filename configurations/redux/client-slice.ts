@@ -7,6 +7,7 @@ export const clientSlice = createSlice({
     currentProvider: {
       name: "Seamless",
       id: "",
+      img: null,
     },
   },
   reducers: {
