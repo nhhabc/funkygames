@@ -3,16 +3,17 @@ import { RootState } from '@/configurations/redux/store'
 import { ApiEnum } from '@/constants/enum'
 import { handleScrollToElement } from '@/helpers/HandleScrollToElement'
 import { AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, ChakraProps, Flex, Text } from '@chakra-ui/react'
-import React from 'react'
+import React, { ReactNode } from 'react'
 import { useSelector } from 'react-redux'
 
 type TMenuAccordion = ChakraProps & {
   data: {name: string, id: string, children: {name: string, id: string, type: ApiEnum}[]},
+  children?: ReactNode,
   onParentClick?: () => void,
   onClick?: () => void,
 }
 
-const MenuAccordion = ({data, onClick, onParentClick, ...props}: TMenuAccordion) => {
+const MenuAccordion = ({data, onClick, onParentClick, children, ...props}: TMenuAccordion) => {
   const {currentContentSection} = useSelector((state: RootState) => state.client)
 
   return (
@@ -26,9 +27,12 @@ const MenuAccordion = ({data, onClick, onParentClick, ...props}: TMenuAccordion)
           onParentClick && onParentClick()
         }}
         >
-        <Text w={"auto"} verticalAlign={"middle"} overflow={"hidden"} textOverflow={"ellipsis"}>
-          {data.name}
-        </Text>
+        <Flex>
+          {children}
+          <Text w={"auto"} verticalAlign={"middle"} overflow={"hidden"} textOverflow={"ellipsis"}>
+            {data.name}
+          </Text>
+        </Flex>
         {data.children.length > 0 && <AccordionIcon />}
           </AccordionButton>
           {data.children.length > 0 && <AccordionPanel padding={0}>
