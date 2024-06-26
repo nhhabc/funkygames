@@ -30,7 +30,7 @@ const PopoverSelect = () => {
             {providers.map((provider, i) => (
               <Flex key={i} borderBottom={"1px solid #e5e5e5"} alignItems={'center'} px={"10px"} transition={".2s"} 
                 cursor={'pointer'}
-                _hover={{ bgColor: "#eee" }}
+                _hover={{ bgColor: "#eee"}}
                 onClick={async () => {
                   await dispatch(clientAction.setCurrentProvider(provider))
                   handleScrollToElement(provider.id)
