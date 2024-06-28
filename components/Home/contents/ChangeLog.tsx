@@ -11,7 +11,7 @@ const ChangeLog = () => {
       <div className={styles.section}>
         <Flex>
           <div className={styles.inside_section}>
-            <HeadingText my={"0.5em"}>Change Log</HeadingText>
+            <HeadingText my={"0.5em"}>5. Change Log</HeadingText>
           </div>
         </Flex>
         <div className={styles.inside_section}>

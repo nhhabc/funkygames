@@ -11,7 +11,7 @@ const Introduction = () => {
       <div className={styles.section}>
         <Flex>
           <div className={styles.inside_section}>
-            <HeadingText my={"0.5em"}>Introduction</HeadingText>
+            <HeadingText my={"0.5em"}>1. Introduction</HeadingText>
           </div>
         </Flex>
         <div className={styles.inside_section}>

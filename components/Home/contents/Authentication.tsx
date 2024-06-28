@@ -10,7 +10,7 @@ const Authentication = () => {
       <div className={styles.section}>
         <Flex>
           <div className={styles.inside_section}>
-            <HeadingText my={"0.5em"}>Authentication</HeadingText>
+            <HeadingText my={"0.5em"}>3. Authentication</HeadingText>
           </div>
         </Flex>
           <div className={styles.inside_section}>

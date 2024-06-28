@@ -19,7 +19,7 @@ const PopoverSelect = () => {
         return (<>
           <PopoverTrigger>
             <Flex sx={menuItem} minW={"100%"} alignItems={'center'} justifyContent={'space-between'}>
-              <Text>Seamless API</Text>
+              <Text>10. Seamless API</Text>
               <ChevronDownIcon fontSize={"18px"}/>    
             </Flex>
           </PopoverTrigger>

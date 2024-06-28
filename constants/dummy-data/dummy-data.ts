@@ -2,66 +2,66 @@ import { ApiEnum } from "../enum"
 
 export const data = [
   {
-    name: "Introduction",
+    name: "1. Introduction",
     id: "introduction",
     children: []
   },
   {
-    name: "Overview",
+    name: "2. Overview",
     id: "overview",
     children: []
   },
   {
-    name: "Authentication",
+    name: "3. Authentication",
     id: "authentication",
     children: []
   },
   {
-    name: "Error Code List",
+    name: "4. Error Code List",
     id: "error_code",
     children: []
   },
   {
-    name: "Change Log",
+    name: "5. Change Log",
     id: "change_log",
     children: []
   },
   {
-    name: "Appendix",
+    name: "6. Appendix",
     id: "appendix",
     children: [
       {
-        name: "Error codes reference",
+        name: "6.1 Error codes reference",
         id: "error_codes_reference",
         type: ApiEnum.NONE,
       },
       {
-        name: "Provider and game types",
+        name: "6.2 Provider and game types",
         id: "provider_game_types",
         type: ApiEnum.NONE,
       },
       {
-        name: "Pagination",
+        name: "6.3 Pagination",
         id: "pagination",
         type: ApiEnum.NONE,
       },
       {
-        name: "Language",
+        name: "6.4 Language",
         id: "language",
         type: ApiEnum.NONE,
       },
       {
-        name: "Date time in input and output",
+        name: "6.5 Date time in input and output",
         id: "date_time_input_output",
         type: ApiEnum.NONE,
       },
       {
-        name: "Supported timezone",
+        name: "6.6 Supported timezone",
         id: "supported_timezone",
         type: ApiEnum.NONE,
       },
       {
-        name: "Mimi seamless diagram",
+        name: "6.7 Mimi seamless diagram",
         id: "mimi_seamless_diagram",
         type: ApiEnum.NONE,
       },
@@ -69,173 +69,173 @@ export const data = [
     ]
   },
   {
-    name: "Account API",
+    name: "7. Account API",
     id: "account",
     children: [
       {
-        name: "CreatePlayer",
+        name: "7.1 CreatePlayer",
         id: "createPlayer",
         type: ApiEnum.POST,
       },
       {
-        name: "Login",
+        name: "7.2 Login",
         id: "login",
         type: ApiEnum.POST,
       },
       {
-        name: "RefreshToken",
+        name: "7.3 RefreshToken",
         id: "refreshToken",
         type: ApiEnum.POST,
       }
     ]
   },
   {
-    name: "Player API",
+    name: "8. Player API",
     id: "player",
     children: [
       {
-        name: "Profile",
+        name: "8.1 Profile",
         id: "profile",
         type: ApiEnum.POST,
       },
       {
-        name: "GetBalance",
+        name: "8.2 GetBalance",
         id: "getbalance",
         type: ApiEnum.POST,
       },
       {
-        name: "Deposit",
+        name: "8.3 Deposit",
         id: "deposit",
         type: ApiEnum.POST,
       },
       {
-        name: "Withdraw",
+        name: "8.4 Withdraw",
         id: "withdraw",
         type: ApiEnum.POST,
       },
       {
-        name: "GetGameUrl",
+        name: "8.5 GetGameUrl",
         id: "getgameurl",
         type: ApiEnum.POST,
       },
       {
-        name: "Logout",
+        name: "8.6 Logout",
         id: "logout",
         type: ApiEnum.POST,
       },
       {
-        name: "Update BetlimitID for Sexy",
+        name: "8.7 Update BetlimitID for Sexy",
         id: "update_betlimitid_for_sexy",
         type: ApiEnum.POST,
       },
       {
-        name: "Get pending rounds in Pragmatic Play (Optional)",
+        name: "8.8 Get pending rounds in Pragmatic Play (Optional)",
         id: "get_pending_rounds_in_pragmatic_play_(optional)",
         type: ApiEnum.POST,
       },
     ]
   },
   {
-    name: "Data API",
+    name: "9. Data API",
     id: "data_domain",
     children: [
       {
-        name: "Transaction",
+        name: "9.1 Transaction",
         id: "transaction",
         type: ApiEnum.POST,
       },
       {
-        name: "BetList",
+        name: "9.2 BetList",
         id: "betlist",
         type: ApiEnum.POST,
       },
       {
-        name: "BetListBy",
+        name: "9.3 BetListBy",
         id: "betlistby",
         type: ApiEnum.POST,
       },
       {
-        name: "BetListOfAgent",
+        name: "9.4 BetListOfAgent",
         id: "betlistofagent",
         type: ApiEnum.POST,
       },
       {
-        name: "GetGameName (optional)",
+        name: "9.5 GetGameName (optional)",
         id: "getgamename_(optional)",
         type: ApiEnum.POST,
       },
       {
-        name: "Get Transaction by RefNo",
+        name: "9.6 Get Transaction by RefNo",
         id: "get_transaction_by_refno",
         type: ApiEnum.POST,
       },
       {
-        name: "Get Transaction of Agent",
+        name: "9.7 Get Transaction of Agent",
         id: "get_transaction_of_agent",
         type: ApiEnum.POST,
       },
       {
-        name: "BetListPaginated",
+        name: "9.8 BetListPaginated",
         id: "bet_list_paginated",
         type: ApiEnum.POST,
       },
       {
-        name: "GetOutStandingBets",
+        name: "9.9 GetOutStandingBets",
         id: "getoutstandingbets",
         type: ApiEnum.POST,
       },
       {
-        name: "Get Sum of Balance of all players",
+        name: "9.10 Get Sum of Balance of all players",
         id: "get_sum_of_balance_of_all_players",
         type: ApiEnum.POST,
       },
       {
-        name: "BetListDetailsV3",
+        name: "9.11 BetListDetailsV3",
         id: "betlistdetailsv3",
         type: ApiEnum.POST,
       },
       {
-        name: "GetGameHistoryUrl",
+        name: "9.12 GetGameHistoryUrl",
         id: "getgamehistoryurl",
         type: ApiEnum.POST,
       },
       {
-        name: "WinloseSummarize",
+        name: "9.13 WinloseSummarize",
         id: "winlosesummarize",
         type: ApiEnum.POST,
       },
       {
-        name: "BettingHistory",
+        name: "9.14 BettingHistory",
         id: "bettinghistory",
         type: ApiEnum.POST,
       },
       {
-        name: "WinloseV2",
+        name: "9.15 WinloseV2",
         id: "winlosev2",
         type: ApiEnum.POST,
       },
       {
-        name: "WinloseAllV2",
+        name: "9.16 WinloseAllV2",
         id: "winloseallv2",
         type: ApiEnum.POST,
       },
       {
-        name: "List available game",
+        name: "9.17 List available game",
         id: "list_available_game",
         type: ApiEnum.GET,
       },
       {
-        name: "Get Game History Url By RoundId",
+        name: "9.18 Get Game History Url By RoundId",
         id: "getgamehistoryurlbyroundid",
         type: ApiEnum.POST,
       },
       {
-        name: "MMG-OutStandingBets",
+        name: "9.19 MMG-OutStandingBets",
         id: "mmg_outstandingbets",
         type: ApiEnum.POST,
       },
       {
-        name: "BetListDetailsV2",
+        name: "9.20 BetListDetailsV2",
         id: "betlistdetailsv2",
         type: ApiEnum.POST,
       },
@@ -746,11 +746,11 @@ export const changeLog = [
 
 export const apiData = [
   {
-    title: "Account",
+    title: "7. Account",
     id: "account",
     api: [
       {
-        title: "CreatePlayer",
+        title: "7.1 CreatePlayer",
         id: "createPlayer",
         type: ApiEnum.POST,
         endpoint: "https://{{api_domain}}/account/createplayer",
@@ -901,7 +901,7 @@ export const apiData = [
       },
 
       {
-        title: "Login",
+        title: "7.2 Login",
         id: "login",
         type: ApiEnum.POST,
         endpoint: "https://{{api_domain}}/account/login",
@@ -1050,7 +1050,7 @@ export const apiData = [
       },
 
       {
-        title: "RefreshToken",
+        title: "7.3 RefreshToken",
         id: "refreshToken",
         type: ApiEnum.POST,
         endpoint: "https://{{api_domain}}/account/refreshtoken",
@@ -1206,11 +1206,11 @@ export const apiData = [
   },
 
   {
-    title: "Player",
+    title: "8. Player",
     id: "player",
     api: [
       {
-        title: "Profile",
+        title: "8.1 Profile",
         id: "profile",
         type: ApiEnum.POST,
         endpoint: "https://{{api_domain}}/player/profile",
@@ -1374,7 +1374,7 @@ export const apiData = [
         ]
       },
       {
-        title: "GetBalance",
+        title: "8.2 GetBalance",
         id: "getbalance",
         type: ApiEnum.POST,
         endpoint: "https://{{api_domain}}/player/getbalance",
@@ -1510,7 +1510,7 @@ export const apiData = [
         ]
       },
       {
-        title: "Deposit",
+        title: "8.3 Deposit",
         id: "deposit",
         type: ApiEnum.POST,
         endpoint: "https://{{api_domain}}/player/deposit",
@@ -1672,7 +1672,7 @@ export const apiData = [
         ]
       },
       {
-        title: "Withdraw",
+        title: "8.4 Withdraw",
         id: "withdraw",
         type: ApiEnum.POST,
         endpoint: "https://{{api_domain}}/player/withdraw",
@@ -1834,7 +1834,7 @@ export const apiData = [
         ]
       },
       {
-        title: "GetGameUrl",
+        title: "8.5 GetGameUrl",
         id: "getgameurl",
         type: ApiEnum.POST,
         endpoint: "https://{{api_domain}}/player/getgameurl",
@@ -2007,7 +2007,7 @@ export const apiData = [
         ]
       },
       {
-        title: "Logout",
+        title: "8.6 Logout",
         id: "logout",
         type: ApiEnum.POST,
         endpoint: "https://{{api_domain}}/player/logout",
@@ -2117,7 +2117,7 @@ export const apiData = [
         ]
       },
       {
-        title: "Update BetlimitID for Sexy",
+        title: "8.7 Update BetlimitID for Sexy",
         id: "update_betlimitid_for_sexy",
         type: ApiEnum.POST,
         endpoint: "https://{{api_domain}}/player/update-bet-limit-ids",
@@ -2240,7 +2240,7 @@ export const apiData = [
         ]
       },
       {
-        title: "Get pending rounds in Pragmatic Play (Optional)",
+        title: "8.8 Get pending rounds in Pragmatic Play (Optional)",
         id: "get_pending_rounds_in_pragmatic_play_(optional)",
         type: ApiEnum.GET,
         endpoint: "https://{{api_domain}}/player/get-pending-pp-rounds",
@@ -2360,11 +2360,11 @@ export const apiData = [
   },
 
   {
-    title: "Data (https://{{data_domain}})",
+    title: "9. Data (https://{{data_domain}})",
     id: "data_domain",
     api: [
       {
-        title: "Transaction",
+        title: "9.1 Transaction",
         id: "transaction",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/data/transaction",
@@ -2563,7 +2563,7 @@ export const apiData = [
         ]
       },
       {
-        title: "BetList",
+        title: "9.2 BetList",
         id: "betlist",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/data/betlist",
@@ -2735,7 +2735,7 @@ export const apiData = [
         ]
       },
       {
-        title: "BetListBy",
+        title: "9.3 BetListBy",
         id: "betlistby",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/data/betlistby",
@@ -2925,7 +2925,7 @@ export const apiData = [
         ]
       },
       {
-        title: "BetListOfAgent",
+        title: "9.4 BetListOfAgent",
         id: "betlistofagent",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/data/betlistofagent",
@@ -3149,7 +3149,7 @@ export const apiData = [
         ]
       },
       {
-        title: "GetGameName (optional)",
+        title: "9.5 GetGameName (optional)",
         id: "getgamename_(optional)",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/data/getgamename",
@@ -3285,7 +3285,7 @@ export const apiData = [
         ]
       },
       {
-        title: "Get Transaction by RefNo",
+        title: "9.6 Get Transaction by RefNo",
         id: "get_transaction_by_refno",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/data/TransactionByRefNo",
@@ -3437,7 +3437,7 @@ export const apiData = [
         ]
       },
       {
-        title: "Get Transaction of Agent",
+        title: "9.7 Get Transaction of Agent",
         id: "get_transaction_of_agent",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/data/TransactionOfAgent",
@@ -3659,7 +3659,7 @@ export const apiData = [
         ]
       },
       {
-        title: "BetListPaginated",
+        title: "9.8 BetListPaginated",
         id: "bet_list_paginated",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/data/BetListPaginated",
@@ -3888,7 +3888,7 @@ export const apiData = [
         ]
       },
       {
-        title: "GetOutStandingBets",
+        title: "9.9 GetOutStandingBets",
         id: "getoutstandingbets",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/data/GetOutStandingBets",
@@ -4074,7 +4074,7 @@ export const apiData = [
         ]
       }, 
       {
-        title: "Get Sum of Balance of all players",
+        title: "9.10 Get Sum of Balance of all players",
         id: "get_sum_of_balance_of_all_players",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/data/sum-player-balance",
@@ -4215,7 +4215,7 @@ export const apiData = [
         ]
       },
       {
-        title: "BetListDetailsV3",
+        title: "9.11 BetListDetailsV3",
         id: "betlistdetailsv3",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/data/BetListDetailsV3",
@@ -4454,7 +4454,7 @@ export const apiData = [
         ]
       },
       {
-        title: "GetGameHistoryUrl",
+        title: "9.12 GetGameHistoryUrl",
         id: "getgamehistoryurl",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/data/get-game-history-url",
@@ -4599,7 +4599,7 @@ export const apiData = [
         ]
       },
       {
-        title: "WinloseSummarize",
+        title: "9.13 WinloseSummarize",
         id: "winlosesummarize",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/WinloseSummarize/GetAll",
@@ -4793,7 +4793,7 @@ export const apiData = [
         ]
       },
       {
-        title: "BettingHistory",
+        title: "9.14 BettingHistory",
         id: "bettinghistory",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/data/BettingHistory",
@@ -5009,7 +5009,7 @@ export const apiData = [
         ]
       },
       {
-        title: "WinloseV2",
+        title: "9.15 WinloseV2",
         id: "winlosev2",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/data/winloseV2",
@@ -5206,7 +5206,7 @@ export const apiData = [
         ]
       },
       {
-        title: "WinloseAllV2",
+        title: "9.16 WinloseAllV2",
         id: "winloseallv2",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/data/winloseallv2",
@@ -5422,7 +5422,7 @@ export const apiData = [
         ]
       },
       {
-        title: "List available game",
+        title: "9.17 List available game",
         id: "list_available_game",
         type: ApiEnum.GET,
         endpoint: "https://{{data_domain}}/data/games",
@@ -5586,7 +5586,7 @@ export const apiData = [
         ]
       },
       {
-        title: "Get Game History Url By RoundId",
+        title: "9.18 Get Game History Url By RoundId",
         id: "getgamehistoryurlbyroundid",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/data/get-game-history-url-by-roundid",
@@ -5767,7 +5767,7 @@ export const apiData = [
         ]
       },
       {
-        title: "MMG-OutStandingBets",
+        title: "9.19 MMG-OutStandingBets",
         id: "mmg_outstandingbets",
         type: ApiEnum.POST,
         endpoint: "https://{{data_domain}}/data/mmg-outstandingbets",
@@ -5924,7 +5924,7 @@ export const apiData = [
         ]
       },
       {
-        title: "BetListDetailsV2",
+        title: "9.20 BetListDetailsV2",
         id: "betlistdetailsv2",
         type: ApiEnum.POST,
         endpoint: "https://{{api_domain}}/data/BetListDetailsV2",

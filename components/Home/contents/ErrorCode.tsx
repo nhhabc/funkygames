@@ -11,7 +11,7 @@ const ErrorCode = () => {
         <div className={styles.section}>
           <Flex>
             <div className={styles.inside_section}>
-              <HeadingText my={"0.5em"}>Error Code List</HeadingText>
+              <HeadingText my={"0.5em"}>4. Error Code List</HeadingText>
             </div>
           </Flex>
           <div className={styles.inside_section}>
