@@ -131,7 +131,7 @@ export const data = [
       {
         name: "8.8 Get pending rounds in Pragmatic Play (Optional)",
         id: "get_pending_rounds_in_pragmatic_play_(optional)",
-        type: ApiEnum.POST,
+        type: ApiEnum.GET,
       },
     ]
   },
