@@ -10,6 +10,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <title>API Documentation Mimi Gaming</title>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700" rel="stylesheet" />
       </head>
       <body>
