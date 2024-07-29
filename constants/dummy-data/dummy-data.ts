@@ -99,37 +99,22 @@ export const data = [
         type: ApiEnum.POST,
       },
       {
-        name: "8.2 GetBalance",
-        id: "getbalance",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "8.3 Deposit",
-        id: "deposit",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "8.4 Withdraw",
-        id: "withdraw",
-        type: ApiEnum.POST,
-      },
-      {
-        name: "8.5 GetGameUrl",
+        name: "8.2 GetGameUrl",
         id: "getgameurl",
         type: ApiEnum.POST,
       },
       {
-        name: "8.6 Logout",
+        name: "8.3 Logout",
         id: "logout",
         type: ApiEnum.POST,
       },
       {
-        name: "8.7 Update BetlimitID for Sexy",
+        name: "8.4 Update BetlimitID for Sexy",
         id: "update_betlimitid_for_sexy",
         type: ApiEnum.POST,
       },
       {
-        name: "8.8 Get pending rounds in Pragmatic Play (Optional)",
+        name: "8.5 Get pending rounds in Pragmatic Play (Optional)",
         id: "get_pending_rounds_in_pragmatic_play_(optional)",
         type: ApiEnum.GET,
       },
@@ -744,11 +729,11 @@ export const changeLog = [
 
 {version: "3.0.7",	changelog:  [
   "Seamless versions",
-], modifydate: "02-May-2023"},
+], modifydate: "02-May-2024"},
 
 {version: "3.0.8",	changelog:  [
   "Web versions in getgameUrl Api",
-], modifydate: "17-Jul-2023"},
+], modifydate: "17-Jul-2024"},
 ]
 
 export const apiData = [
