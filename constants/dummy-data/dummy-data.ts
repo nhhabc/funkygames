@@ -728,11 +728,11 @@ export const changeLog = [
 ], modifydate: "23-Jun-2023"},
 
 {version: "3.0.7",	changelog:  [
-  "Seamless versions",
+  "Update API document Seamless versions",
 ], modifydate: "02-May-2024"},
 
 {version: "3.0.8",	changelog:  [
-  "Web versions in getgameUrl Api",
+  "Update API document web versions",
 ], modifydate: "17-Jul-2024"},
 ]
 
